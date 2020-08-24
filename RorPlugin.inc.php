@@ -4,7 +4,7 @@ import('lib.pkp.classes.plugins.GenericPlugin');
 /**
  * Class rorPlugin
  */
-class rorPlugin extends GenericPlugin {
+class RorPlugin extends GenericPlugin {
 	public function register($category, $path, $mainContextId = NULL) {
 
 		// Register the plugin even when it is not enabled
@@ -17,12 +17,7 @@ class rorPlugin extends GenericPlugin {
 		return $success;
 	}
 
-	/**
-	 * @copydoc Plugin::getName()
-	 */
-	function getName() {
-		return 'rorPlugin';
-	}
+
 
 	/**
 	 * @copydoc Plugin::getDisplayName()
