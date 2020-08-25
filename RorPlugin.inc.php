@@ -4,19 +4,28 @@ import('lib.pkp.classes.plugins.GenericPlugin');
 /**
  * Class rorPlugin
  */
-class RorPlugin extends GenericPlugin {
+class RorPlugin extends GenericPlugin
+{
+
+	/**
+	 * @copydoc Plugin::register()
+	 */
 	public function register($category, $path, $mainContextId = NULL) {
 
-		// Register the plugin even when it is not enabled
-		$success = parent::register($category, $path);
+		$success = parent::register($category, $path, $mainContextId);
 
 		if ($success && $this->getEnabled()) {
-			// Do something when the plugin is enabled
-		}
 
+			//HookRegistry::register('authorform::display', array($this, 'handleAutorFormDisplay'));
+
+		}
 		return $success;
 	}
 
+	function handleAutorFormDisplay($hook, $args) {
+		$request = PKPApplication::get()->getRequest();
+		$templateMgr = TemplateManager::getManager($request);
+	}
 
 
 	/**
@@ -32,6 +41,5 @@ class RorPlugin extends GenericPlugin {
 	function getDescription() {
 		return __('plugins.generic.ror.description');
 	}
-
 
 }
