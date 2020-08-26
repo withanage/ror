@@ -8,16 +8,23 @@
 				tagLimit: 1,
 				tagSource: function(search, response){ldelim}
 					$.ajax({ldelim}
-						url: 'https://api.crossref.org/funders',
+						url: 'https://api.ror.org/organizations',
 						dataType: 'json',
 						cache: true,
 						data: {ldelim}
-							query: search.term + '*'
+							affiliation: search.term + '*'
 							{rdelim},
 						success:
 								function( data ) {ldelim}
-									var output = data.message.items;
+									var output = data.items;
 									console.log(output);
+									response($.map(output, function(item) {ldelim}
+										return {ldelim}
+											label: item.organization.name,
+											value: item.organization.name
+											{rdelim}
+									{rdelim}));
+
 								{rdelim}
 					{rdelim});
 				{rdelim}
