@@ -1,3 +1,3 @@
 <?php
-require_once('RorPlugin.inc.php');
-return new rorPlugin();
+require_once('RORPlugin.php');
+return new RORPlugin();
