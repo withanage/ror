@@ -6,9 +6,9 @@
 				.attr("id", "affiliation-ROR2")
 				.attr("name", "affiliation-ROR2[]");
 
-		$('input[id^="affiliation-de_DE"]').after(rorInput);
+		$('input[id^="affiliation-en_US"]').after(rorInput);
 
-		$('input[id^="affiliation-de_DE"]').tagit({ldelim}
+		$('input[id^="affiliation-en_US"]').tagit({ldelim}
 			itemName: 'affiliation-ROR',
 			fieldName: 'affiliation-ROR[]',
 			allowSpaces: true,
