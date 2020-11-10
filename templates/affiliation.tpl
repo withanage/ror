@@ -2,11 +2,7 @@
 
 	$(document).ready(function () {ldelim}
 
-		let rorInput = $("<input type='text' value='' />")
-				.attr("id", "affiliation-ROR2")
-				.attr("name", "affiliation-ROR2[]");
 
-		$('input[id^="affiliation-en_US"]').after(rorInput);
 
 		$('input[id^="affiliation-en_US"]').tagit({ldelim}
 			itemName: 'affiliation-ROR',
@@ -23,7 +19,7 @@
 						{rdelim},
 					success:
 							function (data) {ldelim}
-								var output = data.items;
+								let output = data.items;
 								console.log(output);
 								response($.map(output, function (item) {ldelim}
 									return {ldelim}
@@ -34,6 +30,11 @@
 
 								{rdelim}
 					{rdelim});
+				{rdelim},
+			afterTagAdded: function(event, tag) {ldelim}
+				console.log()
+				{rdelim},
+			afterTagRemoved: function(event, tag) {ldelim}
 				{rdelim},
 			onTagClicked: function(event, tag) {ldelim}
 				{rdelim},
