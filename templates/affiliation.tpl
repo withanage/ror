@@ -1,14 +1,13 @@
 <script>
 
 	$(document).ready(function () {ldelim}
-		var mytest = "{$mytest}";
-		console.log(mytest);
-	let lang = 'en_US';
+		var primaryLocale = "{$primaryLocale}";
+
 	//$('input[id^="affiliation-'+ lang+'"]').hide();
-	$('input[id^="affiliation-'+ lang+'"]').tagit({ldelim}
+	$('input[id^="affiliation-'+ primaryLocale+'"]').tagit({ldelim}
 		fieldName: 'affiliation-ROR[]',
 		allowSpaces: true,
-		tagLimit: 1,
+		uiLimit: 1,
 		tagSource: function (search, response) {ldelim}
 			$.ajax({ldelim}
 				url: 'https://api.ror.org/organizations',
@@ -29,18 +28,23 @@
 							{rdelim}
 				{rdelim});
 			{rdelim},
-		afterTagAdded: function(event, tag) {ldelim}
-			console.log("afterTagAdded ",tag);
-			$('input[id^="affiliation-fr_CA"]').val("reee");
+		afterTagAdded: function(event, ui) {ldelim}
+			console.log("afterTagAdded ",ui);
+			if (!ui.duringInitialization === true) {
+				{foreach from=$supportedLocales key=locale item=v}
+				$('input[id^="affiliation-fr_CA"]').val("{$locale}");
+				console.log("{$locale}");
+				{/foreach}
+			}
 			{rdelim},
-		afterTagRemoved: function(event, tag) {ldelim}
-			console.log("afterTagRemoved ",tag);
+		afterTagRemoved: function(event, ui) {ldelim}
+			console.log("afterTagRemoved ",ui);
 			{rdelim},
-		onTagClicked: function(event, tag) {ldelim}
-			console.log("onTagClicked ",tag);
+		onTagClicked: function(event, ui) {ldelim}
+			console.log("onTagClicked ",ui);
 			{rdelim},
-		onTagRemoved: function(event, tag) {ldelim}
-			console.log("onTagClicked ",tag);
+		onTagRemoved: function(event, ui) {ldelim}
+			console.log("onTagClicked ",ui);
 			{rdelim}
 		{rdelim});
 	{rdelim});

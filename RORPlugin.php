@@ -59,6 +59,7 @@ class RORPlugin extends GenericPlugin
 	function handleFormDisplay($hookName, $args) {
 		$request = PKPApplication::get()->getRequest();
 		$templateMgr = TemplateManager::getManager($request);
+
 		switch ($hookName) {
 			case 'authorform::display':
 				$authorForm =& $args[0];
