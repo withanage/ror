@@ -27,8 +27,44 @@ class RORPlugin extends GenericPlugin
 
 		if ($success && $this->getEnabled()) {
 			HookRegistry::register('authorform::display', array($this, 'handleAutorFormDisplay'));
+			HookRegistry::register('authordao::getAdditionalFieldNames', array($this, 'handleAdditionalFieldNames'));
+			HookRegistry::register('Schema::get::author', function ($hookName, $args) {
+				$schema = $args[0];
+
+				$schema->properties->rorId = (object)[
+					'type' => 'string',
+					'apiSummary' => true,
+					'validation' => ['nullable']
+				];
+			});
+			HookRegistry::register('authorform::display', array($this, 'handleFormDisplay'));
+			HookRegistry::register('authorform::execute', array($this, 'handleAuthorFormExecute'));
+
+
 		}
 		return $success;
+	}
+	function handleAuthorFormExecute($hookname, $args) {
+		$form =& $args[0];
+		$form->readUserVars(array('affiliation', 'rorId'));
+
+	}
+	function handleFormDisplay($hookName, $args) {
+		$request = PKPApplication::get()->getRequest();
+		$templateMgr = TemplateManager::getManager($request);
+		switch ($hookName) {
+			case 'authorform::display':
+				$authorForm =& $args[0];
+				$author = $authorForm->getAuthor();
+				if ($author) {
+					$templateMgr->assign(
+						array('rorId' => $author->getData('rorId'))
+					);
+				}
+				$templateMgr->registerFilter("output", array($this, 'authorFormFilter'));
+				break;
+		}
+		return false;
 	}
 
 	function handleAutorFormDisplay($hook, $args) {
@@ -49,6 +85,11 @@ class RORPlugin extends GenericPlugin
 			$templateMgr->unregisterFilter('output', array($this, 'authorFormFilter'));
 		}
 		return $output;
+	}
+	function handleAdditionalFieldNames($hookName, $params) {
+		$fields =& $params[1];
+		$fields[] = 'rorId';
+		return false;
 	}
 
 
