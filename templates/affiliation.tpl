@@ -1,15 +1,9 @@
 <script>
 
 	$(document).ready(function () {ldelim}
-		// $('<input>').attr({
-		// 	type: 'hidden',
-		// 	id: 'affiliation-ROR-ID',
-		// 	name: 'bar'
-		// }).appendTo('form');
-
-		{rdelim});
-	$('input[id^="affiliation-en_US"]').tagit({ldelim}
-		itemName: 'affiliation-ROR',
+	let lang = 'en_US';
+	$('input[id^="affiliation-'+ lang+'"]').hide();
+	$('input[id^="affiliation-'+ lang+'"]').tagit({ldelim}
 		fieldName: 'affiliation-ROR[]',
 		allowSpaces: true,
 		tagLimit: 1,
@@ -23,9 +17,7 @@
 					{rdelim},
 				success:
 						function (data) {ldelim}
-							let output = data.items;
-							console.log(output);
-							response($.map(output, function (item) {ldelim}
+							response($.map(data.items, function (item) {ldelim}
 								return {ldelim}
 									label: item.organization.name,
 									value: item.organization.name + ' [' + item.organization.id + ']'
@@ -48,4 +40,5 @@
 			console.log("onTagClicked ",tag);
 			{rdelim}
 		{rdelim});
+	{rdelim});
 </script>
