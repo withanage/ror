@@ -2,7 +2,7 @@
 
 	$(document).ready(function () {ldelim}
 	let lang = 'en_US';
-	$('input[id^="affiliation-'+ lang+'"]').hide();
+	//$('input[id^="affiliation-'+ lang+'"]').hide();
 	$('input[id^="affiliation-'+ lang+'"]').tagit({ldelim}
 		fieldName: 'affiliation-ROR[]',
 		allowSpaces: true,
@@ -29,6 +29,7 @@
 			{rdelim},
 		afterTagAdded: function(event, tag) {ldelim}
 			console.log("afterTagAdded ",tag);
+			$('input[id^="affiliation-fr_CA"]').val("reee");
 			{rdelim},
 		afterTagRemoved: function(event, tag) {ldelim}
 			console.log("afterTagRemoved ",tag);

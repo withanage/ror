@@ -46,7 +46,14 @@ class RORPlugin extends GenericPlugin
 	}
 	function handleAuthorFormExecute($hookname, $args) {
 		$form =& $args[0];
-		$form->readUserVars(array('affiliation', 'rorId'));
+		$form->readUserVars(array('affiliation'));
+		$author = $form->getAuthor();
+
+		$affiliation = $form->getData('affiliation');
+		preg_match('/\[https:\/\/ror.org\/(\w|\d)*\]/',$affiliation,$matches);
+		#
+		$author->setData('affiliation', $affiliation);
+
 
 	}
 	function handleFormDisplay($hookName, $args) {
