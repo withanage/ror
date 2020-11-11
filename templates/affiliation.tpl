@@ -32,7 +32,7 @@
 			console.log("afterTagAdded ",ui);
 			if (!ui.duringInitialization === true) {
 				{foreach from=$supportedLocales key=locale item=v}
-				$('input[id^="affiliation-fr_CA"]').val("{$locale}");
+				$('input[id^="affiliation-'+{$locale}+'"]').val("{$locale}");
 				console.log("{$locale}");
 				{/foreach}
 			}
