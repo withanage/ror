@@ -1,6 +1,8 @@
 <script>
 
 	$(document).ready(function () {ldelim}
+		var mytest = "{$mytest}";
+		console.log(mytest);
 	let lang = 'en_US';
 	//$('input[id^="affiliation-'+ lang+'"]').hide();
 	$('input[id^="affiliation-'+ lang+'"]').tagit({ldelim}

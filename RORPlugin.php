@@ -65,7 +65,12 @@ class RORPlugin extends GenericPlugin
 				$author = $authorForm->getAuthor();
 				if ($author) {
 					$templateMgr->assign(
-						array('rorId' => $author->getData('rorId'))
+						array(
+							'rorId' => $author->getData('rorId'),
+							'mytest' => 'mytestsss'
+						)
+
+
 					);
 				}
 				$templateMgr->registerFilter("output", array($this, 'authorFormFilter'));
