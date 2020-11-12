@@ -15,8 +15,7 @@ import('lib.pkp.classes.plugins.GenericPlugin');
 /**
  * Class rorPlugin
  */
-class RORPlugin extends GenericPlugin
-{
+class RORPlugin extends GenericPlugin {
 
 	/**
 	 * @copydoc Plugin::register()
@@ -44,27 +43,28 @@ class RORPlugin extends GenericPlugin
 		}
 		return $success;
 	}
+
 	function handleAuthorFormExecute($hookname, $args) {
 		$form =& $args[0];
 		$form->readUserVars(array('affiliation'));
 		$author = $form->getAuthor();
-		$request = PKPApplication::get()->getRequest();
 		$affiliation = $form->getData('affiliation');
-
-
-			foreach ($affiliation as $locale=>$value) {
-				$rorIDPattern = '/https:\/\/ror\.org\/(\w|\d)*/';
-				preg_match($rorIDPattern,$value,$matches);
-				if(count($matches)>0) {
-					$author->setData('rorId', $matches[0]);
-					$author->setData('affiliation', preg_replace('\['+$matches[0]+'\]','',$value), $locale);
-				}
+		foreach ($affiliation as $locale => $value) {
+			$rorIDPattern = '/\[https:\/\/ror\.org\/(\w|\d)*\]/';
+			preg_match($rorIDPattern, $value, $matches);
+			if (count($matches) > 0) {
+				$author->setData('rorId', str_replace(['[', ']'], '', $matches[0]));
+				$localizedAffiliation = preg_replace($rorIDPattern, '', $value);
+				$author->setData('affiliation', $localizedAffiliation, $locale);
 			}
+
+		}
 
 		#
 
 
 	}
+
 	function handleFormDisplay($hookName, $args) {
 		$request = PKPApplication::get()->getRequest();
 		$templateMgr = TemplateManager::getManager($request);
@@ -73,12 +73,14 @@ class RORPlugin extends GenericPlugin
 			case 'authorform::display':
 				$authorForm =& $args[0];
 				$author = $authorForm->getAuthor();
+				$rorImage = "https://ror.org/assets/ror-logo-small-671ea83ad5060ad5c0c938809aab4731.png";
+
 				if ($author) {
 					$templateMgr->assign(
 						array(
 							'rorId' => $author->getData('rorId'),
-							'mytest' => 'mytestsss'
-						)
+							'rorImage' => $rorImage
+							)
 
 
 					);
@@ -108,6 +110,7 @@ class RORPlugin extends GenericPlugin
 		}
 		return $output;
 	}
+
 	function handleAdditionalFieldNames($hookName, $params) {
 		$fields =& $params[1];
 		$fields[] = 'rorId';
