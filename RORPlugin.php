@@ -48,11 +48,20 @@ class RORPlugin extends GenericPlugin
 		$form =& $args[0];
 		$form->readUserVars(array('affiliation'));
 		$author = $form->getAuthor();
-
+		$request = PKPApplication::get()->getRequest();
 		$affiliation = $form->getData('affiliation');
-		preg_match('/\[https:\/\/ror.org\/(\w|\d)*\]/',$affiliation,$matches);
+
+
+			foreach ($affiliation as $locale=>$value) {
+				$rorIDPattern = '/https:\/\/ror\.org\/(\w|\d)*/';
+				preg_match($rorIDPattern,$value,$matches);
+				if(count($matches)>0) {
+					$author->setData('rorId', $matches[0]);
+					$author->setData('affiliation', preg_replace('\['+$matches[0]+'\]','',$value), $locale);
+				}
+			}
+
 		#
-		$author->setData('affiliation', $affiliation);
 
 
 	}
