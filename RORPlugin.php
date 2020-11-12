@@ -49,13 +49,18 @@ class RORPlugin extends GenericPlugin {
 		$form->readUserVars(array('affiliation'));
 		$author = $form->getAuthor();
 		$affiliation = $form->getData('affiliation');
+		$publicationLocale = $form->getDefaultFormLocale();
 		foreach ($affiliation as $locale => $value) {
-			$rorIDPattern = '/\[https:\/\/ror\.org\/(\w|\d)*\]/';
-			preg_match($rorIDPattern, $value, $matches);
-			if (count($matches) > 0) {
-				$author->setData('rorId', str_replace(['[', ']'], '', $matches[0]));
-				$localizedAffiliation = preg_replace($rorIDPattern, '', $value);
-				$author->setData('affiliation', $localizedAffiliation, $locale);
+			if ($locale == $publicationLocale) {
+				$rorIDPattern = '/\[https:\/\/ror\.org\/(\w|\d)*\]/';
+				preg_match($rorIDPattern, $value, $matches);
+				if (count($matches) > 0) {
+					$author->setData('rorId', str_replace(['[', ']'], '', $matches[0]));
+					$localizedAffiliation = preg_replace($rorIDPattern, '', $value);
+					$author->setData('affiliation', $localizedAffiliation, $locale);
+				} else {
+					$author->setData('rorId', null);
+				}
 			}
 
 		}
@@ -73,14 +78,12 @@ class RORPlugin extends GenericPlugin {
 			case 'authorform::display':
 				$authorForm =& $args[0];
 				$author = $authorForm->getAuthor();
-				$rorImage = "https://ror.org/assets/ror-logo-small-671ea83ad5060ad5c0c938809aab4731.png";
 
 				if ($author) {
 					$templateMgr->assign(
 						array(
 							'rorId' => $author->getData('rorId'),
-							'rorImage' => $rorImage
-							)
+						)
 
 
 					);

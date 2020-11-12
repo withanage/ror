@@ -31,25 +31,25 @@
 			afterTagAdded: function (event, ui) {ldelim}
 				console.log("afterTagAdded ", ui);
 				if (ui.duringInitialization === true) {
-					$('.tagit-label').css('background','url({$rorImage}) 0 0px no-repeat');
-				}
-				else  {
+
+					$('input[id^="affiliation-' + primaryLocale + '"]').after('<div id = "rorIdField" style="float:right; background:#eaedee">{$rorId}</div>');
+				} else {
 					{foreach from=$supportedLocales key=locale item=v}
-					$('input[id^="affiliation-'+{$locale}+
-					'"]'
-				).val("{$locale}");
+
 					console.log("{$locale}");
 					{/foreach}
 				}
 				{rdelim},
 			afterTagRemoved: function (event, ui) {ldelim}
 				console.log("afterTagRemoved ", ui);
+				$('#rorIdField').remove("");
 				{rdelim},
 			onTagClicked: function (event, ui) {ldelim}
 				console.log("onTagClicked ", ui);
 				{rdelim},
 			onTagRemoved: function (event, ui) {ldelim}
 				console.log("onTagClicked ", ui);
+				$('#rorIdField').remove("");
 				{rdelim}
 			{rdelim});
 		{rdelim});
