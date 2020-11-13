@@ -32,8 +32,6 @@
 					{rdelim});
 				{rdelim},
 			afterTagAdded: function (event, ui) {ldelim}
-				console.log("afterTagAdded ", ui);
-
 
 				if (ui.duringInitialization === true) {
 					$('input[id^="affiliation-' + primaryLocale + '"]').after('<div id = "rorIdField" style="float:right; background:#eaedee;"><a href="{$rorId}" target="_blank">{$rorId}</a></div>');
@@ -43,7 +41,6 @@
 					if (found !== null) {
 						const rorId = found[0];
 						$.each(results, function (key,value){
-							//console.log(value);
 							if (value.organization.id == rorId){
 								var supportedLocales = {$supportedLocales|json_encode};
 
@@ -52,9 +49,10 @@
 									if (locale.length == 2) {
 										value.organization.labels.forEach(function (v) {
 											if (locale == v["iso639"]) {
-												if (locale !== primaryLocale) {
+												if (locale !== primaryLocale.slice(0,2)) {
 													$('input[id^="affiliation-' + locale + '"]').val(v.label);
-													console.log(locale, labels, v["iso639"]);
+													$('.localization_popover').css("display", "block");
+													$('.localization_popover').css("width", "576px");
 												}
 											}
 										});
@@ -74,15 +72,16 @@
 				}
 				{rdelim},
 			afterTagRemoved: function (event, ui) {ldelim}
-				console.log("afterTagRemoved ", ui);
 				$('#rorIdField').remove("");
+				$('input[id^="affiliation-').val("");
+				$('.localization_popover').css("display", "hidden");
 				{rdelim},
 			onTagClicked: function (event, ui) {ldelim}
-				console.log("onTagClicked ", ui);
 				{rdelim},
 			onTagRemoved: function (event, ui) {ldelim}
-				console.log("onTagClicked ", ui);
 				$('#rorIdField').remove("");
+				$('input[id^="affiliation-').val("");
+				$('.localization_popover').css("display", "hidden");
 				{rdelim}
 			{rdelim});
 		{rdelim});
