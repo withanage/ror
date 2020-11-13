@@ -31,7 +31,7 @@
 			afterTagAdded: function (event, ui) {ldelim}
 				console.log("afterTagAdded ", ui);
 				if (ui.duringInitialization === true) {
-					$('input[id^="affiliation-' + primaryLocale + '"]').after('<div id = "rorIdField" style="float:right; background:#eaedee">{$rorId}</div>');
+					$('input[id^="affiliation-' + primaryLocale + '"]').after('<div id = "rorIdField" style="float:right; background:#eaedee; border: 1x solid #1F7F67; padding: 1px;"><a href="{$rorId}" target="_blank">{$rorId}</a></div>');
 				} else {
 					{foreach from=$supportedLocales key=locale item=v}
 					console.log("{$locale}");
