@@ -45,19 +45,23 @@
 						$.each(results, function (key,value){
 							//console.log(value);
 							if (value.organization.id == rorId){
-								var supportedLocales = "{$supportedLocales}";
-								if (locale.length == 2) {
-									labels.forEach(function (value) {
-										if (locale == value["iso639"]) {
-											if (locale !== primaryLocale) {
-												$('input[id^="affiliation-' + locale + '"]').val(value.label);
-												console.log(locale, labels, value["iso639"]);
-											}
-										}
-									});
+								var supportedLocales = {$supportedLocales|json_encode};
 
-								}
-								console.log(value);
+								$.each(supportedLocales, function( k, val ) {
+									var locale = k.slice(0,2);
+									if (locale.length == 2) {
+										value.organization.labels.forEach(function (v) {
+											if (locale == v["iso639"]) {
+												if (locale !== primaryLocale) {
+													$('input[id^="affiliation-' + locale + '"]').val(v.label);
+													console.log(locale, labels, v["iso639"]);
+												}
+											}
+										});
+
+									}
+								});
+
 							}
 						});
 
