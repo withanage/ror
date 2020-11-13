@@ -51,8 +51,8 @@
 											if (locale == v["iso639"]) {
 												if (locale !== primaryLocale.slice(0,2)) {
 													$('input[id^="affiliation-' + locale + '"]').val(v.label);
-													$('.localization_popover').css("display", "block");
-													$('.localization_popover').css("width", "576px");
+													$('input[id^="affiliation-' + locale + '"]').parent().css("display", "block");
+													$('input[id^="affiliation-' + locale + '"]').parent().css("width", "576px");
 												}
 											}
 										});
