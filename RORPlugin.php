@@ -90,14 +90,11 @@ class RORPlugin extends GenericPlugin {
 			case 'authorform::display':
 				$authorForm =& $args[0];
 				$author = $authorForm->getAuthor();
-
 				if ($author) {
 					$templateMgr->assign(
 						array(
 							'rorId' => $author->getData('rorId'),
 						)
-
-
 					);
 				}
 				$templateMgr->registerFilter("output", array($this, 'authorFormFilter'));
@@ -109,12 +106,12 @@ class RORPlugin extends GenericPlugin {
 	function submissionView($hook, $args) {
 		$request = $args[0];
 		$templateMgr = TemplateManager::getManager($request);
-		$templateMgr->assign(array("orcidIcon" => $this->getIcon()));
+		$templateMgr->assign(array("rorIdIcon" => $this->getIcon()));
 		return false;
 	}
 
 	function getIcon() {
-		$path = Core::getBaseDir() . '/' . $this->getPluginPath() . '/templates/images/orcid.svg';
+		$path = Core::getBaseDir() . '/' . $this->getPluginPath() . '/assets/rorId.svg';
 		return file_exists($path) ? file_get_contents($path) : '';
 	}
 
