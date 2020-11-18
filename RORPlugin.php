@@ -25,8 +25,11 @@ class RORPlugin extends GenericPlugin {
 		$success = parent::register($category, $path, $mainContextId);
 
 		if ($success && $this->getEnabled()) {
-			HookRegistry::register('authorform::display', array($this, 'handleAutorFormDisplay'));
+			# Author form
 			HookRegistry::register('authordao::getAdditionalFieldNames', array($this, 'handleAdditionalFieldNames'));
+			HookRegistry::register('authorform::display', array($this, 'handleAutorFormDisplay'));
+			HookRegistry::register('authorform::display', array($this, 'handleFormDisplay'));
+			HookRegistry::register('authorform::execute', array($this, 'handleAuthorFormExecute'));
 			HookRegistry::register('Schema::get::author', function ($hookName, $args) {
 				$schema = $args[0];
 
@@ -36,12 +39,21 @@ class RORPlugin extends GenericPlugin {
 					'validation' => ['nullable']
 				];
 			});
-			HookRegistry::register('authorform::display', array($this, 'handleFormDisplay'));
-			HookRegistry::register('authorform::execute', array($this, 'handleAuthorFormExecute'));
+			# Article
+			HookRegistry::register('ArticleHandler::view', array(&$this, 'submissionView'));
+			//HookRegistry::register('PreprintHandler::view', array(&$this, 'submissionView'));
 
 
 		}
 		return $success;
+	}
+
+	function addSubmissionDisplay($hookName, $params) {
+		$templateMgr = $params[1];
+		$output =& $params[2];
+
+		$submission = $templateMgr->get_template_vars('monograph') ? $templateMgr->get_template_vars('monograph') : $templateMgr->get_template_vars('article');
+
 	}
 
 	function handleAuthorFormExecute($hookname, $args) {
@@ -94,11 +106,16 @@ class RORPlugin extends GenericPlugin {
 		return false;
 	}
 
-	function handleAutorFormDisplay($hook, $args) {
-		$request = PKPApplication::get()->getRequest();
+	function submissionView($hook, $args) {
+		$request = $args[0];
 		$templateMgr = TemplateManager::getManager($request);
-		$templateMgr->registerFilter("output", array($this, 'authorFormFilter'));
+		$templateMgr->assign(array("orcidIcon" => $this->getIcon()));
 		return false;
+	}
+
+	function getIcon() {
+		$path = Core::getBaseDir() . '/' . $this->getPluginPath() . '/templates/images/orcid.svg';
+		return file_exists($path) ? file_get_contents($path) : '';
 	}
 
 	function authorFormFilter($output, $templateMgr) {
