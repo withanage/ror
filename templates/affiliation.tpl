@@ -3,9 +3,15 @@
 	$(document).ready(function () {ldelim}
 		var primaryLocale = "{$primaryLocale}";
 		var results = null;
+		console.log(primaryLocale);
 
-		//$('input[id^="affiliation-'+ lang+'"]').hide();
-		$('input[id^="affiliation-' + primaryLocale + '"]').tagit({ldelim}
+
+		var mainAffiliation = 'input[id^="affiliation-' + primaryLocale + '"]';
+		if ( !$( mainAffiliation ).length ) {
+			mainAffiliation = 'input[id^="affiliation-"]';
+		}
+
+		$(mainAffiliation).tagit({ldelim}
 			fieldName: 'affiliation-ROR[]',
 			allowSpaces: true,
 			tagLimit: 1,
@@ -34,7 +40,7 @@
 			afterTagAdded: function (event, ui) {ldelim}
 
 				if (ui.duringInitialization === true) {
-					$('input[id^="affiliation-' + primaryLocale + '"]').after('<div id = "rorIdField" style="float:right; background:#eaedee;"><a href="{$rorId}" target="_blank">{$rorId}</a></div>');
+					$(mainAffiliation).after('<div id = "rorIdField" style="float:right; background:#eaedee;"><a href="{$rorId}" target="_blank">{$rorId}</a></div>');
 				} else {
 					const regex = /https:\/\/ror\.org\/(\d|\w)+/g;
 					const found = ui.tagLabel.match(regex);
