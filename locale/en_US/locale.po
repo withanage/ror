@@ -4,5 +4,6 @@ msgstr "Allows  managing author/reviewer affiliations using the <a href=\"https:
 msgid "plugins.generic.ror.displayName"
 msgstr "Research Organization Registry (ROR)"
 
-
+msgid "plugins.generic.ror.rorPlaceHolder"
+msgstr "Search ror.org"
 

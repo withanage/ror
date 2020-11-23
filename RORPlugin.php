@@ -94,6 +94,7 @@ class RORPlugin extends GenericPlugin {
 					$templateMgr->assign(
 						array(
 							'rorId' => $author->getData('rorId'),
+							'rorPlaceHolder' => __('plugins.generic.ror.rorPlaceHolder')
 						)
 					);
 				}
@@ -106,7 +107,9 @@ class RORPlugin extends GenericPlugin {
 	function submissionView($hook, $args) {
 		$request = $args[0];
 		$templateMgr = TemplateManager::getManager($request);
-		$templateMgr->assign(array("rorIdIcon" => $this->getIcon()));
+		$templateMgr->assign(array(
+			"rorIdIcon" => $this->getIcon()
+		));
 		return false;
 	}
 
