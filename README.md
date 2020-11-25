@@ -39,7 +39,9 @@ Licensed under GPLv3. See [LICENSE](LICENSE) for details.
 ```
 
 ## User Documentation
-* After enabling the plugin, an author affiliation
+* Adding ROR organization into your author affiliation.
+* ![ROR documentation](https://github.com/withanage/ror/blob/master/asssets/ror.gif?raw=true)
+
 
 ## Features
 
