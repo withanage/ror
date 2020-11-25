@@ -13,7 +13,7 @@ Licensed under GPLv3. See [LICENSE](LICENSE) for details.
 
 ## User Documentation
 * Adding the ROR organization name into your author affiliation. :movie_camera: [GIF Image](docu/ror.gif)
-* Adding a customized name  with ROR ID :movie_camera: [GIF Image](docu/ror.gif)
+* Adding a customized organization name  with ROR ID :movie_camera: [GIF Image](docu/ror.gif)
 
 ## Installation
  1. Login as admin or Journal manager
@@ -60,14 +60,14 @@ Licensed under GPLv3. See [LICENSE](LICENSE) for details.
 
 * Multilingual organization support
 
+##  Development
 
-## Credits
-
-## Development
 * [Dulip Withanage](https://www.github.com/withanage)
 
-## Specification
-  [Paul Vierkant](https://github.com/paulvierkant)
+
+
+
+
 
 
 
