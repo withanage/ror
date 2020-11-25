@@ -11,6 +11,12 @@ For multilingual journals, additionally supported languages will be pre-filled  
 
 Licensed under GPLv3. See [LICENSE](LICENSE) for details.
 
+## User Documentation
+* Adding the ROR organization name into your author affiliation.
+* ![ROR documentation](docu/ror.gif)
+
+
+
 ## Installation
  1. Login as admin or Journal manager
  1. Select _Settings -> Website -> Plugins_
@@ -37,10 +43,6 @@ Licensed under GPLv3. See [LICENSE](LICENSE) for details.
     {/if}
 </span>
 ```
-
-## User Documentation
-* Adding ROR organization into your author affiliation.
-* ![ROR documentation](https://github.com/withanage/ror/blob/master/asssets/ror.gif?raw=true)
 
 
 ## Features
