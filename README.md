@@ -12,8 +12,8 @@ For multilingual journals, additionally supported languages will be pre-filled  
 Licensed under GPLv3. See [LICENSE](LICENSE) for details.
 
 ## User Documentation
-* Adding the ROR organization name into your author affiliation. [ROR documentation](docu/ror.gif)
-* Adding a customized name  with ROR ID [ROR documentation](docu/ror.gif)
+* Adding the ROR organization name into your author affiliation. :movie_camera: [GIF Image](docu/ror.gif)
+* Adding a customized name  with ROR ID :movie_camera: [GIF Image](docu/ror.gif)
 
 ## Installation
  1. Login as admin or Journal manager
