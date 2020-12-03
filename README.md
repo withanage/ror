@@ -52,6 +52,7 @@ Licensed under GPLv3. See [LICENSE](LICENSE) for details.
 * Subsequent alteration of the ROR-suggested organization name is also possible by maintaining the ROR Plugin, wich can be helpful in special cases e.g. adding a institute name for a research organization.
 
 ### Release 2.0
+* OpenAire Support
 * Support for user affiliations
 * OJS 3.3 compatibility
 * Usability requests
