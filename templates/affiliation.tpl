@@ -42,6 +42,7 @@
 			afterTagAdded: function (event, ui) {ldelim}
 				if (ui.duringInitialization === true) {
 					$(mainAffiliation).after('<div id = "rorIdField" style="float:right; background:#eaedee;"><a href="{$rorId}" target="_blank">{$rorId}</a></div>');
+					$(tagitInput).attr("placeholder", rorPlaceHolder);
 
 				} else {
 					const regex = /https:\/\/ror\.org\/(\d|\w)+/g;
