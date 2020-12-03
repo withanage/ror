@@ -3,8 +3,8 @@
 <version>
 	<application>ror</application>
 	<type>plugins.generic</type>
-	<release>1.0.0.0</release>
-	<date>2020-11-25</date>
+	<release>1.0.0.1</release>
+	<date>2020-12-03</date>
 	<lazy-load>1</lazy-load>
 	<class>rorPlugin</class>
 </version>
