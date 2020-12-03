@@ -62,17 +62,18 @@ class RORPlugin extends GenericPlugin {
 		$author = $form->getAuthor();
 		$affiliation = $form->getData('affiliation');
 		$publicationLocale = $form->getDefaultFormLocale();
+		$rorIDPattern = '/\[[\s]*https:\/\/ror\.org\/[\w|\d]*[\s]*\]/';
+
 		foreach ($affiliation as $locale => $value) {
 			if ($locale == $publicationLocale) {
-				$rorIDPattern = '/\[https:\/\/ror\.org\/[\w|\d]*\]/';
 				preg_match($rorIDPattern, $value, $matches);
 				if (count($matches) > 0) {
 					$author->setData('rorId', str_replace(['[', ']'], '', $matches[0]));
-					$localizedAffiliation = preg_replace($rorIDPattern, '', $value);
-					$author->setData('affiliation', $localizedAffiliation, $locale);
+					$affiliation = preg_replace($rorIDPattern, '', $value);
+					$author->setData('affiliation', $affiliation, $locale);
 				} else {
-					$currentAffiliation = $author->getData('affiliation',$locale);
-					if ($currentAffiliation!==$value) {
+					$currentAffiliation = $author->getData('affiliation', $locale);
+					if ($currentAffiliation !== $value) {
 						$author->setData('rorId', null);
 					}
 				}
