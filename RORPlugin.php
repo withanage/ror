@@ -65,25 +65,21 @@ class RORPlugin extends GenericPlugin {
 		$rorIDPattern = '/\[[\s]*https:\/\/ror\.org\/[\w|\d]*[\s]*\]/';
 
 		foreach ($affiliation as $locale => $value) {
-			if ($locale == $publicationLocale) {
-				preg_match($rorIDPattern, $value, $matches);
-				if (count($matches) > 0) {
-					$author->setData('rorId', str_replace(['[', ']'], '', $matches[0]));
-					$affiliation = preg_replace($rorIDPattern, '', $value);
-					$author->setData('affiliation', $affiliation, $locale);
-				} else {
+
+			preg_match($rorIDPattern, $value, $matches);
+			if (count($matches) > 0) {
+				$author->setData('rorId', str_replace(['[', ']'], '', $matches[0]));
+				$affiliation = preg_replace($rorIDPattern, '', $value);
+				$author->setData('affiliation', $affiliation, $locale);
+			} else {
+				if ($locale == $publicationLocale) {
 					$currentAffiliation = $author->getData('affiliation', $locale);
 					if ($currentAffiliation !== $value) {
 						$author->setData('rorId', null);
 					}
 				}
 			}
-
 		}
-
-		#
-
-
 	}
 
 	function handleFormDisplay($hookName, $args) {
