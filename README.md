@@ -50,12 +50,12 @@ Licensed under GPLv3. See [LICENSE](LICENSE) for details.
 * Allows auto-suggesting organization names
 * Pre-fills  affiliations in multilingual context
 * Subsequent alteration of the ROR-suggested organization name is also possible by maintaining the ROR Plugin, wich can be helpful in special cases e.g. adding a institute name for a research organization.
+* OJS 3.3 compatibility
 
 ### Release 2.0
 * OpenAire Support
 * Support for user affiliations
-* OJS 3.3 compatibility
-* Usability requests
+* Usability requests specially for dissemination plugins
 
 ### Release 3.0
 
