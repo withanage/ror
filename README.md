@@ -57,7 +57,7 @@ Licensed under GPLv3. See [LICENSE](LICENSE) for details.
 * OJS 3.3 compatibility
 
 ### Release 2.0
-* OpenAire Support
+* OpenAire / DAatacite / Crossref Support
 * Support for user affiliations
 * Usability requests specially for dissemination plugins
 
