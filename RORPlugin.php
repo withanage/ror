@@ -27,7 +27,6 @@ class RORPlugin extends GenericPlugin {
 		if ($success && $this->getEnabled()) {
 			# Author form
 			HookRegistry::register('authordao::getAdditionalFieldNames', array($this, 'handleAdditionalFieldNames'));
-			HookRegistry::register('authorform::display', array($this, 'handleAutorFormDisplay'));
 			HookRegistry::register('authorform::display', array($this, 'handleFormDisplay'));
 			HookRegistry::register('authorform::execute', array($this, 'handleAuthorFormExecute'));
 			HookRegistry::register('Schema::get::author', function ($hookName, $args) {
@@ -61,6 +60,7 @@ class RORPlugin extends GenericPlugin {
 		$form->readUserVars(array('affiliation'));
 		$author = $form->getAuthor();
 		$affiliation = $form->getData('affiliation');
+
 		$publicationLocale = $form->getDefaultFormLocale();
 		$rorIDPattern = '/\[[\s]*https:\/\/ror\.org\/[\w|\d]*[\s]*\]/';
 
