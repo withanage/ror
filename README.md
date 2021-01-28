@@ -7,6 +7,10 @@ OJS 3 Plugin for adding  Organization names  for author affiliations provided by
 Organizations maintained by ROR.org are automatically fetched using an auto suggesting function.
 For multilingual journals, additionally supported languages will be pre-filled  given, [ROR.org](https://ror.org/) has the corresponding names in the OJS supported languages.
 
+ROR ID is  integrated in the OJS reader interface up from OJS 3.3.
+ROR Plugin is  shipped with the OJS Plugin gallery up from OJS 3.2. For Installation of OJS 3.2 reader interface support see [installation](#Installation).
+
+
 [Open Access Publication Platform](https://www.tib.eu/en/publishing-archiving/open-access/repositories/open-access-publication-platform), [TIB, Hannover, Germany](https://www.tib.eu/)  maintains  this Plugin and  supports its long-term compatibility by adding features and guaranteeing OJS compatibility.
 
 Licensed under GPLv3. See [LICENSE](LICENSE) for details.
@@ -53,7 +57,7 @@ Licensed under GPLv3. See [LICENSE](LICENSE) for details.
 * OJS 3.3 compatibility
 
 ### Release 2.0
-* OpenAire Support
+* OpenAire / DAatacite / Crossref Support
 * Support for user affiliations
 * Usability requests specially for dissemination plugins
 
