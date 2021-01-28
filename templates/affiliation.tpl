@@ -4,7 +4,7 @@
 		var primaryLocale = "{$primaryLocale}";
 		var results = null;
 		const tagitInput = '.tagit-new > input';
-		const rorPlaceHolder = "{$rorPlaceHolder}";
+		const rorPlaceHolder = "Search ror.org";
 
 		var mainAffiliation = 'input[id^="affiliation-' + primaryLocale + '"]';
 		if ( !$( mainAffiliation ).length ) {
@@ -36,6 +36,8 @@
 
 								{rdelim}
 					{rdelim});
+				{rdelim},
+			beforeTagAdded: function (event,ui) {ldelim}
 				{rdelim},
 			afterTagAdded: function (event, ui) {ldelim}
 				if (ui.duringInitialization === true) {
@@ -69,13 +71,10 @@
 							}
 						});
 
-
 					}
 
 
 				}
-				//$(tagitInput).removeAttr("placeholder");
-				//$(tagitInput).attr("placeholder", rorPlaceHolder);
 				console.log("afterTagAdded");
 				{rdelim},
 			afterTagRemoved: function (event, ui) {ldelim}
@@ -83,18 +82,15 @@
 				$('input[id^="affiliation-').val("");
 				$('.localization_popover').css("display", "hidden");
 				$(tagitInput).attr("placeholder", rorPlaceHolder);
-				console.log("afterTagRemoved");
 				{rdelim},
 			onTagClicked: function (event, ui) {ldelim}
 				$(tagitInput).attr("placeholder", rorPlaceHolder);
-				console.log("onTagClicked");
 				{rdelim},
 			onTagRemoved: function (event, ui) {ldelim}
 				$('#rorIdField').remove("");
 				$('input[id^="affiliation-').val("");
 				$('.localization_popover').css("display", "hidden");
 				$(tagitInput).attr("placeholder", rorPlaceHolder);
-				console.log("onTagRemoved");
 				{rdelim}
 			{rdelim});
 		if($('.tagit-label').val() || $('.tagit-label').length==0 ) {
