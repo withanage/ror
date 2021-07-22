@@ -10,7 +10,6 @@ ROR ID is  integrated in the OJS reader interface up from OJS 3.3.
 ROR Plugin is  shipped with the OJS Plugin gallery up from OJS 3.2. For Installation of OJS 3.2 reader interface support see [installation](#Installation).
 
 
-[Open Access Publication Platform](https://www.tib.eu/en/publishing-archiving/open-access/publishing-open-access/tib-open-publishing), [TIB, Hannover, Germany](https://www.tib.eu/)  maintains  this Plugin and  supports its long-term compatibility by adding features and guaranteeing OJS compatibility.
 
 Licensed under GPLv3. See [LICENSE](LICENSE) for details.
 
