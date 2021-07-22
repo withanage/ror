@@ -114,7 +114,8 @@ class RORPlugin extends GenericPlugin {
 	}
 
 	function getIcon() {
-		$path = Core::getBaseDir() . '/' . $this->getPluginPath() . '/assets/rorId.svg';
+		$pluginPath = $this->getPluginPath();
+		$path = Core::getBaseDir() . '/' . $pluginPath . '/assets/rorId.svg';
 		return file_exists($path) ? file_get_contents($path) : '';
 	}
 
