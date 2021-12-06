@@ -38,10 +38,9 @@ class RORPlugin extends GenericPlugin {
 					'validation' => ['nullable']
 				];
 			});
-			# Article
+			# Submission
 			HookRegistry::register('ArticleHandler::view', array(&$this, 'submissionView'));
-			//HookRegistry::register('PreprintHandler::view', array(&$this, 'submissionView'));
-
+			HookRegistry::register('PreprintHandler::view', array(&$this, 'submissionView'));
 
 		}
 		return $success;
