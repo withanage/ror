@@ -94,7 +94,7 @@ class RORPlugin extends GenericPlugin {
 						array(
 							'rorId' => $author->getData('rorId'),
 							'rorPlaceHolder' => __('plugins.generic.ror.rorPlaceHolder'),
-							'supportedLocales'  => $request->getJournal()->getSupportedLocaleNames()
+							'rorSupportedLocales'  => $request->getJournal()->getSupportedLocaleNames()
 						)
 					);
 				}
