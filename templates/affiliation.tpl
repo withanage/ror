@@ -26,7 +26,7 @@
 					success:
 							function (data) {ldelim}
 								results = data.items;
-
+								console.log('data.items', data.items);
 								r($.map(data.items, function (item) {ldelim}
 									return {ldelim}
 										label: item.organization.name,
@@ -46,12 +46,15 @@
 				} else {
 					const regex = /https:\/\/ror\.org\/(\d|\w)+/g;
 					const found = ui.tagLabel.match(regex);
+					console.log("ui",ui);
 					if (found !== null) {
+						console.log(found);
 						const rorId = found[0];
 						$.each(results, function (key,value){
+							console.log(key, value);
 							if (value.organization.id == rorId){
 								var supportedLocales = {$supportedLocales|json_encode};
-
+								console.log("supportedLocales", supportedLocales);
 								$.each(supportedLocales, function( k, val ) {
 									var locale = k.slice(0,2);
 									if (locale.length == 2) {
