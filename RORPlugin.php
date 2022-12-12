@@ -93,7 +93,9 @@ class RORPlugin extends GenericPlugin {
 					$templateMgr->assign(
 						array(
 							'rorId' => $author->getData('rorId'),
-							'rorPlaceHolder' => __('plugins.generic.ror.rorPlaceHolder')
+							'rorPlaceHolder' => __('plugins.generic.ror.rorPlaceHolder'),
+							'supportedLocales' => $request->getJournal()->getSupportedFormLocales()
+
 						)
 					);
 				}
