@@ -53,9 +53,9 @@
 						$.each(results, function (key,value){
 							console.log(key, value);
 							if (value.organization.id == rorId){
-								var supportedLocales = {$supportedLocales|json_encode};
-								console.log("supportedLocales", supportedLocales);
-								$.each(supportedLocales, function( k, val ) {
+								var rorSupportedLocales = {$rorSupportedLocales|json_encode};
+								console.log("rorSupportedLocales", rorSupportedLocales);
+								$.each(rorSupportedLocales, function( k, val ) {
 									var locale = k.slice(0,2);
 									if (locale.length == 2) {
 										value.organization.labels.forEach(function (v) {
