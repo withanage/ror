@@ -4,7 +4,7 @@
 		var primaryLocale = "{$primaryLocale}";
 		var results = null;
 		const tagitInput = '.tagit-new > input';
-		const rorPlaceHolder = "Search ror.org";
+		const rorPlaceHolder = "{translate key="plugins.generic.ror.rorPlaceHolder"}";
 
 		var mainAffiliation = 'input[id^="affiliation-' + primaryLocale + '"]';
 		if ( !$( mainAffiliation ).length ) {
