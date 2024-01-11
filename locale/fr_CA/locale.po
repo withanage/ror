@@ -1,5 +1,5 @@
 msgid "plugins.generic.ror.description"
-msgstr "Permet de gérer les affiliations des auteur.e.s/évaluateur.trice.s en utilisant les identifiants <a href=\"https://ror.org\">ROR</a>.""
+msgstr "Permet de gérer les affiliations des auteur.e.s/évaluateur.trice.s en utilisant les identifiants <a href=\"https://ror.org\">ROR</a>."
 
 msgid "plugins.generic.ror.displayName"
 msgstr "Research Organization Registry - ROR (Registre des Organisations de Recherche)"
