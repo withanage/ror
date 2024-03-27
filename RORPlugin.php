@@ -72,13 +72,20 @@ class RORPlugin extends GenericPlugin {
 				$author->setData('affiliation', $affiliation, $locale);
 			} else {
 				if ($locale == $publicationLocale) {
-					$currentAffiliation = $author->getData('affiliation', $locale);
+					$currentAffiliation = $this->getCurrentAuthorAffiliation($author->getId(), $locale);
 					if ($currentAffiliation !== $value) {
 						$author->setData('rorId', null);
 					}
 				}
 			}
 		}
+	}
+
+	private function getCurrentAuthorAffiliation($formAuthorId, $locale) {
+		$authorDao = DAORegistry::getDAO('AuthorDAO');
+		$author = $authorDao->getById($formAuthorId);
+
+		return $author->getData('affiliation', $locale);
 	}
 
 	function handleFormDisplay($hookName, $args) {
