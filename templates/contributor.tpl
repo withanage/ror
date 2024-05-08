@@ -6,9 +6,10 @@
  * @license Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
  *
  * Ror lookup for contributor
+ * Ror Api v2: https://docs.google.com/document/d/1lYybpmtFW3cSitNAUzuVgFieco17PfuIbeVlcqcwync
  *}
 
-<link rel="stylesheet" href="{$stylePath}" type="text/css"/>
+<link rel="stylesheet" href="{$stylePath}" type="text/css" />
 
 {assign var="templateOpen" value='<script>let rorPluginTemplate = `'}
 {assign var="templateClose" value='`;</script>'}
@@ -30,7 +31,7 @@
                 <input class="pkpFormField__input pkpFormField--text__input" ref="input" v-model="searchPhrase"
                        :type="inputType" :id="controlId" :name="localizedName" :aria-describedby="describedByIds"
                        :aria-invalid="errors && errors.length" :disabled="isDisabled" :required="isRequired"
-                       :style="inputStyles"/>
+                       :style="inputStyles" />
             </label>
             <button class="pkpSearch__clear" v-if="searchPhrase" @click.prevent="clearSearchPhrase">
                 <icon icon="times"></icon>
@@ -48,76 +49,97 @@
 {$templateClose}
 
 <script>
-    let rorPluginTemplateCompiled = pkp.Vue.compile(rorPluginTemplate);
+	let rorPluginTemplateCompiled = pkp.Vue.compile(rorPluginTemplate);
 
-    pkp.Vue.component('ror-field-text-lookup', {
-        name: 'RorFieldTextLookup',
-        extends: pkp.Vue.component('field-text'),
-        data() {
-            return {
-                // [ { id: id1, name: name1, labels: [ 'en': 'label1', ... }, ... ]
-                organizations: [],
-                searchPhrase: "",
-                minimumSearchPhraseLength: 3,
-            }
-        },
-        methods: {
-            selectOrganization(index) {
-                let fields = this.$parent._props.fields;
-                fields[this.getIndex('rorId')].value = this.organizations[index].id;
-                let values = fields[this.getIndex('affiliation')].value;
-                Object.keys(values).forEach(key => {
-                    values[key] = this.organizations[index].name;
-                    if (typeof this.organizations[index].labels[key] !== 'undefined') {
-                        values[key] = this.organizations[index].labels[key];
-                    }
-                });
-            },
-            clearSearchPhrase() {
-                this.organizations = [];
-                this.searchPhrase = "";
-            },
-            getIndex(fieldName) {
-                let fields = this.$parent._props.fields;
-                for (let i = 0; i < fields.length; i++) {
-                    if (fields[i].name === fieldName) {
-                        return i;
-                    }
-                }
-            },
-            apiLookup() {
-                fetch('https://api.ror.org/organizations?affiliation=' + this.searchPhrase + '*')
-                    .then(response => response.json())
-                    .then(data => {
-                        this.organizations = [];
-                        let items = data.items;
-                        items.forEach((item) => {
-                            let labels = { /* */};
-                            for (let i = 0; i < item.organization.labels.length; i++) {
-                                labels[item.organization.labels[i].iso639]
-                                    = item.organization.labels[i].label
-                            }
-                            let row = {
-                                id: item.organization.id,
-                                name: item.organization.name,
-                                labels: labels
-                            };
+	pkp.Vue.component('ror-field-text-lookup', {
+		name: 'RorFieldTextLookup',
+		extends: pkp.Vue.component('field-text'),
+		data() {
+			return {
+				// [ { id: id1, name: name1, labels: [ 'en': 'label1', ... }, ... ]
+				organizations: [],
+				searchPhrase: '',
+				minimumSearchPhraseLength: 3
+			};
+		},
+		methods: {
+			selectOrganization: function(index) {
+				let fields = this.$parent._props.fields;
+				fields[this.getIndex('rorId')].value = this.organizations[index].id;
+				let values = fields[this.getIndex('affiliation')].value;
+				Object.keys(values).forEach(key => {
+					values[key] = this.organizations[index].name;
+					if (typeof this.organizations[index].labels[key] !== 'undefined') {
+						values[key] = this.organizations[index].labels[key];
+					}
+				});
+			},
+			clearSearchPhrase: function() {
+				this.organizations = [];
+				this.searchPhrase = '';
+			},
+			getIndex: function(fieldName) {
+				let fields = this.$parent._props.fields;
+				for (let i = 0; i < fields.length; i++) {
+					if (fields[i].name === fieldName) {
+						return i;
+					}
+				}
+			},
+			apiLookup: function() {
+				fetch('https://api.ror.org/v2/organizations?affiliation=' + this.searchPhrase + '*')
+					.then(response => response.json())
+					.then(data => {
+						this.organizations = [];
+						this.fillOrganizations(data.items);
+					})
+					.catch(error => console.log(error));
+			},
+			fillOrganizations: function(items) {
+				items.forEach((item) => {
+					let name = ''; // primary name
+					let names = { /**/}; // alternative names
 
-                            this.organizations.push(row);
-                        });
-                    })
-                    .catch(error => console.log(error));
-            }
-        },
-        watch: {
-            searchPhrase() {
-                if (this.searchPhrase.length >= this.minimumSearchPhraseLength) {
-                    this.apiLookup();
-                }
-            }
-        },
-        render: function (h) {
-            return rorPluginTemplateCompiled.render.call(this, h);
-        }
-    });
+					for (let i = 0; i < item.organization.names.length; i++) {
+						// primary name
+						if (item.organization.names[i].types.includes('ror_display')
+							&& item.organization.names[i].types.includes('label')) {
+							name = item.organization.names[i].value;
+						}
+
+						// alternative names
+						if (item.organization.names[i].lang !== null
+							&& item.organization.names[i].lang.length > 0) {
+							names[item.organization.names[i].lang] = item.organization.names[i].value;
+						}
+					}
+
+					// primary name not found, fill from alternative names
+					for (let i = 0; i < item.organization.names.length; i++) {
+						if (name === null || name.length === 0) {
+							name = item.organization.names[i].value;
+						}
+					}
+
+					let row = {
+						id: item.organization.id,
+						name: name,
+						labels: names
+					};
+
+					this.organizations.push(row);
+				});
+			}
+		},
+		watch: {
+			searchPhrase() {
+				if (this.searchPhrase.length >= this.minimumSearchPhraseLength) {
+					this.apiLookup();
+				}
+			}
+		},
+		render: function(h) {
+			return rorPluginTemplateCompiled.render.call(this, h);
+		}
+	});
 </script>
