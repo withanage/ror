@@ -22,6 +22,7 @@ ROR Plugin is shipped with the OJS Plugin gallery up from OJS 3.2. For Installat
 
 * Allows auto-suggesting organization names
 * Pre-fills affiliations in multilingual context
+  * If a language is not found in Ror, then English is used with falling back to the main name in Ror
 * Subsequent alteration of the ROR-suggested organization name is also possible by maintaining the ROR Plugin,
   which can be helpful in special cases e.g. adding a institute name for a research organization.
 * OJS 3.3 compatibility

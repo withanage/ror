@@ -39,9 +39,16 @@ class Workflow
         /* @var TemplateManager $templateMgr */
         $templateMgr = &$args[1];
         $request = Application::get()->getRequest();
+        $context = $request->getContext();
+        $submission = $templateMgr->getTemplateVars('submission');
+
+        $locale = $submission->getLocale();
+        if (empty($locale)) $locale = $context->getPrimaryLocale();
+        if (strlen($locale) > 2) $locale = substr($locale, 0, 2);
 
         $templateMgr->assign([
-            'stylePath' => $request->getBaseUrl() . '/' . $this->plugin->getPluginPath() . '/' . Constants::stylePath
+            'stylePath' => $request->getBaseUrl() . '/' . $this->plugin->getPluginPath() . '/' . Constants::stylePath,
+            'locale' => $locale
         ]);
 
         $templateMgr->display($this->plugin->getTemplateResource(Constants::templateContributor));

@@ -1,0 +1,3260 @@
+{
+  "number_of_results": 28,
+  "items": [
+    {
+      "substring": "university of",
+      "score": 0.84,
+      "matching_type": "PHRASE",
+      "chosen": false,
+      "organization": {
+        "admin": {
+          "created": {
+            "date": "2018-11-14",
+            "schema_version": "1.0"
+          },
+          "last_modified": {
+            "date": "2024-05-13",
+            "schema_version": "2.0"
+          }
+        },
+        "domains": [],
+        "established": 1965,
+        "external_ids": [
+          {
+            "all": [
+              "501100001316"
+            ],
+            "preferred": null,
+            "type": "fundref"
+          },
+          {
+            "all": [
+              "grid.9759.2"
+            ],
+            "preferred": "grid.9759.2",
+            "type": "grid"
+          },
+          {
+            "all": [
+              "0000 0001 2232 2818"
+            ],
+            "preferred": null,
+            "type": "isni"
+          },
+          {
+            "all": [
+              "Q1516684"
+            ],
+            "preferred": null,
+            "type": "wikidata"
+          }
+        ],
+        "id": "https://ror.org/00xkeyj56",
+        "links": [
+          {
+            "type": "website",
+            "value": "http://www.kent.ac.uk/"
+          },
+          {
+            "type": "wikipedia",
+            "value": "http://en.wikipedia.org/wiki/University_of_Kent"
+          }
+        ],
+        "locations": [
+          {
+            "geonames_details": {
+              "country_code": "GB",
+              "country_name": "United Kingdom",
+              "lat": 51.27904,
+              "lng": 1.07992,
+              "name": "Canterbury"
+            },
+            "geonames_id": 2653877
+          }
+        ],
+        "names": [
+          {
+            "lang": "en",
+            "types": [
+              "ror_display",
+              "label"
+            ],
+            "value": "University of Kent"
+          },
+          {
+            "lang": "en",
+            "types": [
+              "alias"
+            ],
+            "value": "University of Kent at Canterbury"
+          }
+        ],
+        "relationships": [
+          {
+            "label": "Kent and Medway Medical School",
+            "type": "child",
+            "id": "https://ror.org/049p9j193"
+          }
+        ],
+        "status": "active",
+        "types": [
+          "education",
+          "funder"
+        ]
+      }
+    },
+    {
+      "substring": "university of",
+      "score": 0.84,
+      "matching_type": "FUZZY",
+      "chosen": false,
+      "organization": {
+        "admin": {
+          "created": {
+            "date": "2018-11-14",
+            "schema_version": "1.0"
+          },
+          "last_modified": {
+            "date": "2024-05-13",
+            "schema_version": "2.0"
+          }
+        },
+        "domains": [],
+        "established": 1834,
+        "external_ids": [
+          {
+            "all": [
+              "100009068",
+              "501100007282",
+              "100009070",
+              "100009069"
+            ],
+            "preferred": "100009068",
+            "type": "fundref"
+          },
+          {
+            "all": [
+              "grid.5734.5"
+            ],
+            "preferred": "grid.5734.5",
+            "type": "grid"
+          },
+          {
+            "all": [
+              "0000 0001 0726 5157"
+            ],
+            "preferred": null,
+            "type": "isni"
+          },
+          {
+            "all": [
+              "Q659080"
+            ],
+            "preferred": null,
+            "type": "wikidata"
+          }
+        ],
+        "id": "https://ror.org/02k7v4d05",
+        "links": [
+          {
+            "type": "website",
+            "value": "http://www.unibe.ch/eng/"
+          },
+          {
+            "type": "wikipedia",
+            "value": "http://en.wikipedia.org/wiki/University_of_Bern"
+          }
+        ],
+        "locations": [
+          {
+            "geonames_details": {
+              "country_code": "CH",
+              "country_name": "Switzerland",
+              "lat": 46.94809,
+              "lng": 7.44744,
+              "name": "Bern"
+            },
+            "geonames_id": 2661552
+          }
+        ],
+        "names": [
+          {
+            "lang": null,
+            "types": [
+              "acronym"
+            ],
+            "value": "UB"
+          },
+          {
+            "lang": "en",
+            "types": [
+              "ror_display",
+              "label"
+            ],
+            "value": "University of Bern"
+          },
+          {
+            "lang": "it",
+            "types": [
+              "label"
+            ],
+            "value": "Università di Berna"
+          },
+          {
+            "lang": "de",
+            "types": [
+              "label"
+            ],
+            "value": "Universität Bern"
+          },
+          {
+            "lang": "fr",
+            "types": [
+              "label"
+            ],
+            "value": "Université de Berne"
+          }
+        ],
+        "relationships": [
+          {
+            "label": "Wyss Academy for Nature",
+            "type": "child",
+            "id": "https://ror.org/03dz0k314"
+          },
+          {
+            "label": "University Hospital of Bern",
+            "type": "related",
+            "id": "https://ror.org/01q9sj412"
+          },
+          {
+            "label": "Wiederkäuerklinik",
+            "type": "related",
+            "id": "https://ror.org/003bz8x96"
+          }
+        ],
+        "status": "active",
+        "types": [
+          "education",
+          "funder"
+        ]
+      }
+    },
+    {
+      "substring": "university of",
+      "score": 0.84,
+      "matching_type": "FUZZY",
+      "chosen": false,
+      "organization": {
+        "admin": {
+          "created": {
+            "date": "2018-11-14",
+            "schema_version": "1.0"
+          },
+          "last_modified": {
+            "date": "2024-05-13",
+            "schema_version": "2.0"
+          }
+        },
+        "domains": [],
+        "established": 1343,
+        "external_ids": [
+          {
+            "all": [
+              "501100007514"
+            ],
+            "preferred": null,
+            "type": "fundref"
+          },
+          {
+            "all": [
+              "grid.5395.a"
+            ],
+            "preferred": "grid.5395.a",
+            "type": "grid"
+          },
+          {
+            "all": [
+              "0000 0004 1757 3729"
+            ],
+            "preferred": null,
+            "type": "isni"
+          },
+          {
+            "all": [
+              "Q645663"
+            ],
+            "preferred": null,
+            "type": "wikidata"
+          }
+        ],
+        "id": "https://ror.org/03ad39j10",
+        "links": [
+          {
+            "type": "website",
+            "value": "http://www.unipi.it/"
+          },
+          {
+            "type": "wikipedia",
+            "value": "http://en.wikipedia.org/wiki/University_of_Pisa"
+          }
+        ],
+        "locations": [
+          {
+            "geonames_details": {
+              "country_code": "IT",
+              "country_name": "Italy",
+              "lat": 43.716429,
+              "lng": 10.398687,
+              "name": "Pisa"
+            },
+            "geonames_id": 3170647
+          }
+        ],
+        "names": [
+          {
+            "lang": null,
+            "types": [
+              "acronym"
+            ],
+            "value": "UniPi"
+          },
+          {
+            "lang": "en",
+            "types": [
+              "ror_display",
+              "label"
+            ],
+            "value": "University of Pisa"
+          },
+          {
+            "lang": "it",
+            "types": [
+              "label"
+            ],
+            "value": "Università di Pisa"
+          },
+          {
+            "lang": "de",
+            "types": [
+              "label"
+            ],
+            "value": "Universität Pisa"
+          },
+          {
+            "lang": "fr",
+            "types": [
+              "label"
+            ],
+            "value": "Université de Pise"
+          }
+        ],
+        "relationships": [
+          {
+            "label": "Ospedale Cisanello",
+            "type": "related",
+            "id": "https://ror.org/00mc91w09"
+          }
+        ],
+        "status": "active",
+        "types": [
+          "education",
+          "funder"
+        ]
+      }
+    },
+    {
+      "substring": "university of",
+      "score": 0.84,
+      "matching_type": "PHRASE",
+      "chosen": false,
+      "organization": {
+        "admin": {
+          "created": {
+            "date": "2018-11-14",
+            "schema_version": "1.0"
+          },
+          "last_modified": {
+            "date": "2024-05-13",
+            "schema_version": "2.0"
+          }
+        },
+        "domains": [],
+        "established": 1998,
+        "external_ids": [
+          {
+            "all": [
+              "grid.470515.2"
+            ],
+            "preferred": "grid.470515.2",
+            "type": "grid"
+          }
+        ],
+        "id": "https://ror.org/053dxh363",
+        "links": [
+          {
+            "type": "website",
+            "value": "http://www.uniuele.ac.cd/"
+          }
+        ],
+        "locations": [
+          {
+            "geonames_details": {
+              "country_code": "CD",
+              "country_name": "Democratic Republic of the Congo",
+              "lat": 2.772836,
+              "lng": 27.607355,
+              "name": "Isiro"
+            },
+            "geonames_id": 215771
+          }
+        ],
+        "names": [
+          {
+            "lang": "fr",
+            "types": [
+              "ror_display",
+              "label"
+            ],
+            "value": "University of Uélé"
+          }
+        ],
+        "relationships": [],
+        "status": "active",
+        "types": [
+          "education"
+        ]
+      }
+    },
+    {
+      "substring": "university of",
+      "score": 0.81,
+      "matching_type": "PHRASE",
+      "chosen": false,
+      "organization": {
+        "admin": {
+          "created": {
+            "date": "2018-11-14",
+            "schema_version": "1.0"
+          },
+          "last_modified": {
+            "date": "2024-05-13",
+            "schema_version": "2.0"
+          }
+        },
+        "domains": [],
+        "established": 1870,
+        "external_ids": [
+          {
+            "all": [
+              "100008875",
+              "100005419",
+              "100008876"
+            ],
+            "preferred": "100008875",
+            "type": "fundref"
+          },
+          {
+            "all": [
+              "grid.265881.0"
+            ],
+            "preferred": "grid.265881.0",
+            "type": "grid"
+          },
+          {
+            "all": [
+              "0000 0001 2186 8990"
+            ],
+            "preferred": null,
+            "type": "isni"
+          },
+          {
+            "all": [
+              "Q1346135"
+            ],
+            "preferred": null,
+            "type": "wikidata"
+          }
+        ],
+        "id": "https://ror.org/02kyckx55",
+        "links": [
+          {
+            "type": "website",
+            "value": "http://www.uakron.edu/"
+          },
+          {
+            "type": "wikipedia",
+            "value": "http://en.wikipedia.org/wiki/University_of_Akron"
+          }
+        ],
+        "locations": [
+          {
+            "geonames_details": {
+              "country_code": "US",
+              "country_name": "United States",
+              "lat": 41.076431,
+              "lng": -81.508365,
+              "name": "Akron"
+            },
+            "geonames_id": 5145476
+          }
+        ],
+        "names": [
+          {
+            "lang": "en",
+            "types": [
+              "ror_display",
+              "label"
+            ],
+            "value": "University of Akron"
+          }
+        ],
+        "relationships": [
+          {
+            "label": "University System of Ohio",
+            "type": "parent",
+            "id": "https://ror.org/0561zqn56"
+          },
+          {
+            "label": "Akron Children's Hospital",
+            "type": "related",
+            "id": "https://ror.org/0107t3e14"
+          },
+          {
+            "label": "Akron General Medical Center",
+            "type": "related",
+            "id": "https://ror.org/059xepj08"
+          }
+        ],
+        "status": "active",
+        "types": [
+          "education",
+          "funder"
+        ]
+      }
+    },
+    {
+      "substring": "university of",
+      "score": 0.81,
+      "matching_type": "FUZZY",
+      "chosen": false,
+      "organization": {
+        "admin": {
+          "created": {
+            "date": "2018-11-14",
+            "schema_version": "1.0"
+          },
+          "last_modified": {
+            "date": "2024-05-13",
+            "schema_version": "2.0"
+          }
+        },
+        "domains": [],
+        "established": 1460,
+        "external_ids": [
+          {
+            "all": [
+              "100008375",
+              "501100008595",
+              "100018710"
+            ],
+            "preferred": "100008375",
+            "type": "fundref"
+          },
+          {
+            "all": [
+              "grid.6612.3"
+            ],
+            "preferred": "grid.6612.3",
+            "type": "grid"
+          },
+          {
+            "all": [
+              "0000 0004 1937 0642"
+            ],
+            "preferred": null,
+            "type": "isni"
+          },
+          {
+            "all": [
+              "Q372608"
+            ],
+            "preferred": null,
+            "type": "wikidata"
+          }
+        ],
+        "id": "https://ror.org/02s6k3f65",
+        "links": [
+          {
+            "type": "website",
+            "value": "https://www.unibas.ch/de"
+          },
+          {
+            "type": "wikipedia",
+            "value": "http://en.wikipedia.org/wiki/University_of_Basel"
+          }
+        ],
+        "locations": [
+          {
+            "geonames_details": {
+              "country_code": "CH",
+              "country_name": "Switzerland",
+              "lat": 47.55839,
+              "lng": 7.57327,
+              "name": "Basel"
+            },
+            "geonames_id": 2661604
+          }
+        ],
+        "names": [
+          {
+            "lang": "en",
+            "types": [
+              "ror_display",
+              "label"
+            ],
+            "value": "University of Basel"
+          },
+          {
+            "lang": "it",
+            "types": [
+              "label"
+            ],
+            "value": "Università di Basilea"
+          },
+          {
+            "lang": "de",
+            "types": [
+              "label"
+            ],
+            "value": "Universität Basel"
+          },
+          {
+            "lang": "fr",
+            "types": [
+              "label"
+            ],
+            "value": "Université de Bâle"
+          }
+        ],
+        "relationships": [
+          {
+            "label": "Swiss Nanoscience Institute",
+            "type": "child",
+            "id": "https://ror.org/02mrd0686"
+          },
+          {
+            "label": "Friedrich Miescher Institute",
+            "type": "related",
+            "id": "https://ror.org/01bmjkv45"
+          },
+          {
+            "label": "Swiss Tropical and Public Health Institute",
+            "type": "related",
+            "id": "https://ror.org/03adhka07"
+          },
+          {
+            "label": "University Children’s Hospital Basel",
+            "type": "related",
+            "id": "https://ror.org/02nhqek82"
+          },
+          {
+            "label": "University Hospital of Basel",
+            "type": "related",
+            "id": "https://ror.org/04k51q396"
+          },
+          {
+            "label": "Universitäre Psychiatrische Kliniken Basel",
+            "type": "related",
+            "id": "https://ror.org/05fw3jg78"
+          },
+          {
+            "label": "Swiss National Data and Service Center for the Humanities",
+            "type": "related",
+            "id": "https://ror.org/047f01g80"
+          },
+          {
+            "label": "Swiss Centre for Applied Human Toxicology",
+            "type": "related",
+            "id": "https://ror.org/03wma5x57"
+          }
+        ],
+        "status": "active",
+        "types": [
+          "education",
+          "funder"
+        ]
+      }
+    },
+    {
+      "substring": "university of",
+      "score": 0.81,
+      "matching_type": "PHRASE",
+      "chosen": false,
+      "organization": {
+        "admin": {
+          "created": {
+            "date": "2018-11-14",
+            "schema_version": "1.0"
+          },
+          "last_modified": {
+            "date": "2024-05-13",
+            "schema_version": "2.0"
+          }
+        },
+        "domains": [],
+        "established": 1977,
+        "external_ids": [
+          {
+            "all": [
+              "501100006450"
+            ],
+            "preferred": null,
+            "type": "fundref"
+          },
+          {
+            "all": [
+              "grid.69292.36"
+            ],
+            "preferred": "grid.69292.36",
+            "type": "grid"
+          },
+          {
+            "all": [
+              "0000 0001 1017 0589"
+            ],
+            "preferred": null,
+            "type": "isni"
+          },
+          {
+            "all": [
+              "Q5625923"
+            ],
+            "preferred": null,
+            "type": "wikidata"
+          }
+        ],
+        "id": "https://ror.org/043fje207",
+        "links": [
+          {
+            "type": "website",
+            "value": "https://www.hig.se"
+          },
+          {
+            "type": "wikipedia",
+            "value": "http://en.wikipedia.org/wiki/G%C3%A4vle_University_College"
+          }
+        ],
+        "locations": [
+          {
+            "geonames_details": {
+              "country_code": "SE",
+              "country_name": "Sweden",
+              "lat": 60.67452,
+              "lng": 17.14174,
+              "name": "Gävle"
+            },
+            "geonames_id": 2712414
+          }
+        ],
+        "names": [
+          {
+            "lang": "sv",
+            "types": [
+              "label"
+            ],
+            "value": "Högskolan i Gävle"
+          },
+          {
+            "lang": "en",
+            "types": [
+              "alias"
+            ],
+            "value": "University of Gaevle"
+          },
+          {
+            "lang": "en",
+            "types": [
+              "alias"
+            ],
+            "value": "University of Gavle"
+          },
+          {
+            "lang": "en",
+            "types": [
+              "ror_display",
+              "label"
+            ],
+            "value": "University of Gävle"
+          }
+        ],
+        "relationships": [],
+        "status": "active",
+        "types": [
+          "education",
+          "funder"
+        ]
+      }
+    },
+    {
+      "substring": "university of",
+      "score": 0.79,
+      "matching_type": "FUZZY",
+      "chosen": false,
+      "organization": {
+        "admin": {
+          "created": {
+            "date": "2018-11-14",
+            "schema_version": "1.0"
+          },
+          "last_modified": {
+            "date": "2024-05-13",
+            "schema_version": "2.0"
+          }
+        },
+        "domains": [],
+        "established": 1833,
+        "external_ids": [
+          {
+            "all": [
+              "501100006447",
+              "501100008481",
+              "501100006448",
+              "501100003290"
+            ],
+            "preferred": "501100006447",
+            "type": "fundref"
+          },
+          {
+            "all": [
+              "grid.7400.3"
+            ],
+            "preferred": "grid.7400.3",
+            "type": "grid"
+          },
+          {
+            "all": [
+              "0000 0004 1937 0650"
+            ],
+            "preferred": null,
+            "type": "isni"
+          },
+          {
+            "all": [
+              "Q206702"
+            ],
+            "preferred": null,
+            "type": "wikidata"
+          }
+        ],
+        "id": "https://ror.org/02crff812",
+        "links": [
+          {
+            "type": "website",
+            "value": "http://www.uzh.ch/index_en.html"
+          },
+          {
+            "type": "wikipedia",
+            "value": "http://en.wikipedia.org/wiki/University_of_Zurich"
+          }
+        ],
+        "locations": [
+          {
+            "geonames_details": {
+              "country_code": "CH",
+              "country_name": "Switzerland",
+              "lat": 47.36667,
+              "lng": 8.55,
+              "name": "Zurich"
+            },
+            "geonames_id": 2657896
+          }
+        ],
+        "names": [
+          {
+            "lang": null,
+            "types": [
+              "acronym"
+            ],
+            "value": "UZH"
+          },
+          {
+            "lang": "en",
+            "types": [
+              "ror_display",
+              "label"
+            ],
+            "value": "University of Zurich"
+          },
+          {
+            "lang": "it",
+            "types": [
+              "label"
+            ],
+            "value": "Università di Zurigo"
+          },
+          {
+            "lang": "de",
+            "types": [
+              "label"
+            ],
+            "value": "Universität Zürich"
+          },
+          {
+            "lang": "fr",
+            "types": [
+              "label"
+            ],
+            "value": "Université de Zurich"
+          }
+        ],
+        "relationships": [
+          {
+            "label": "Institute for Biomedical Engineering",
+            "type": "child",
+            "id": "https://ror.org/00baskk38"
+          },
+          {
+            "label": "Laboratory for Social and Neural Systems Research",
+            "type": "child",
+            "id": "https://ror.org/021p56f43"
+          },
+          {
+            "label": "University Children's Hospital Zurich",
+            "type": "related",
+            "id": "https://ror.org/035vb3h42"
+          },
+          {
+            "label": "University Hospital of Zurich",
+            "type": "related",
+            "id": "https://ror.org/01462r250"
+          },
+          {
+            "label": "Wyss Institute for Biologically Inspired Engineering",
+            "type": "related",
+            "id": "https://ror.org/008cfmj78"
+          },
+          {
+            "label": "World Glacier Monitoring Service",
+            "type": "related",
+            "id": "https://ror.org/01jtrvx49"
+          }
+        ],
+        "status": "active",
+        "types": [
+          "education",
+          "funder"
+        ]
+      }
+    },
+    {
+      "substring": "university of",
+      "score": 0.79,
+      "matching_type": "FUZZY",
+      "chosen": false,
+      "organization": {
+        "admin": {
+          "created": {
+            "date": "2018-11-14",
+            "schema_version": "1.0"
+          },
+          "last_modified": {
+            "date": "2024-05-13",
+            "schema_version": "2.0"
+          }
+        },
+        "domains": [],
+        "established": 1982,
+        "external_ids": [
+          {
+            "all": [
+              "501100007052"
+            ],
+            "preferred": null,
+            "type": "fundref"
+          },
+          {
+            "all": [
+              "grid.5611.3"
+            ],
+            "preferred": "grid.5611.3",
+            "type": "grid"
+          },
+          {
+            "all": [
+              "0000 0004 1763 1124"
+            ],
+            "preferred": null,
+            "type": "isni"
+          },
+          {
+            "all": [
+              "Q2531629"
+            ],
+            "preferred": null,
+            "type": "wikidata"
+          }
+        ],
+        "id": "https://ror.org/039bp8j42",
+        "links": [
+          {
+            "type": "website",
+            "value": "http://www.univr.it/jsp/index.jsp"
+          },
+          {
+            "type": "wikipedia",
+            "value": "http://en.wikipedia.org/wiki/University_of_Verona"
+          }
+        ],
+        "locations": [
+          {
+            "geonames_details": {
+              "country_code": "IT",
+              "country_name": "Italy",
+              "lat": 45.436667,
+              "lng": 11.003611,
+              "name": "Verona"
+            },
+            "geonames_id": 3164527
+          }
+        ],
+        "names": [
+          {
+            "lang": "en",
+            "types": [
+              "ror_display",
+              "label"
+            ],
+            "value": "University of Verona"
+          },
+          {
+            "lang": "it",
+            "types": [
+              "label"
+            ],
+            "value": "Università degli Studi di Verona"
+          },
+          {
+            "lang": "de",
+            "types": [
+              "label"
+            ],
+            "value": "Universität Verona"
+          },
+          {
+            "lang": "fr",
+            "types": [
+              "label"
+            ],
+            "value": "Université de vérone"
+          }
+        ],
+        "relationships": [],
+        "status": "active",
+        "types": [
+          "education",
+          "funder"
+        ]
+      }
+    },
+    {
+      "substring": "university of",
+      "score": 0.79,
+      "matching_type": "PHRASE",
+      "chosen": false,
+      "organization": {
+        "admin": {
+          "created": {
+            "date": "2023-02-16",
+            "schema_version": "1.0"
+          },
+          "last_modified": {
+            "date": "2024-05-13",
+            "schema_version": "2.0"
+          }
+        },
+        "domains": [],
+        "established": 2014,
+        "external_ids": [
+          {
+            "all": [
+              "Q19600089"
+            ],
+            "preferred": "Q19600089",
+            "type": "wikidata"
+          }
+        ],
+        "id": "https://ror.org/045arbm30",
+        "links": [
+          {
+            "type": "website",
+            "value": "https://upr.edu.pk"
+          }
+        ],
+        "locations": [
+          {
+            "geonames_details": {
+              "country_code": "PK",
+              "country_name": "Pakistan",
+              "lat": 33.85782,
+              "lng": 73.76043,
+              "name": "Rawlakot"
+            },
+            "geonames_id": 1161983
+          }
+        ],
+        "names": [
+          {
+            "lang": null,
+            "types": [
+              "acronym"
+            ],
+            "value": "UPR"
+          },
+          {
+            "lang": "en",
+            "types": [
+              "alias"
+            ],
+            "value": "University of Poonch"
+          },
+          {
+            "lang": "en",
+            "types": [
+              "ror_display",
+              "label"
+            ],
+            "value": "University of Poonch Rawalakot"
+          }
+        ],
+        "relationships": [],
+        "status": "active",
+        "types": [
+          "education"
+        ]
+      }
+    },
+    {
+      "substring": "university of",
+      "score": 0.79,
+      "matching_type": "PHRASE",
+      "chosen": false,
+      "organization": {
+        "admin": {
+          "created": {
+            "date": "2018-11-14",
+            "schema_version": "1.0"
+          },
+          "last_modified": {
+            "date": "2024-05-13",
+            "schema_version": "2.0"
+          }
+        },
+        "domains": [],
+        "established": 1963,
+        "external_ids": [
+          {
+            "all": [
+              "grid.430821.c"
+            ],
+            "preferred": "grid.430821.c",
+            "type": "grid"
+          },
+          {
+            "all": [
+              "0000 0001 2286 2160"
+            ],
+            "preferred": null,
+            "type": "isni"
+          },
+          {
+            "all": [
+              "Q1502975"
+            ],
+            "preferred": null,
+            "type": "wikidata"
+          }
+        ],
+        "id": "https://ror.org/05d8pm274",
+        "links": [
+          {
+            "type": "website",
+            "value": "https://www.uog.edu.gy/"
+          },
+          {
+            "type": "wikipedia",
+            "value": "https://en.wikipedia.org/wiki/University_of_Guyana"
+          }
+        ],
+        "locations": [
+          {
+            "geonames_details": {
+              "country_code": "GY",
+              "country_name": "Guyana",
+              "lat": 6.813633,
+              "lng": -58.11789,
+              "name": "Georgetown"
+            },
+            "geonames_id": 3378644
+          }
+        ],
+        "names": [
+          {
+            "lang": "en",
+            "types": [
+              "ror_display",
+              "label"
+            ],
+            "value": "University of Guyana"
+          }
+        ],
+        "relationships": [],
+        "status": "active",
+        "types": [
+          "education"
+        ]
+      }
+    },
+    {
+      "substring": "university of",
+      "score": 0.79,
+      "matching_type": "FUZZY",
+      "chosen": false,
+      "organization": {
+        "admin": {
+          "created": {
+            "date": "2018-11-14",
+            "schema_version": "1.0"
+          },
+          "last_modified": {
+            "date": "2024-05-13",
+            "schema_version": "2.0"
+          }
+        },
+        "domains": [],
+        "established": 1962,
+        "external_ids": [
+          {
+            "all": [
+              "501100004004"
+            ],
+            "preferred": null,
+            "type": "fundref"
+          },
+          {
+            "all": [
+              "grid.11696.39"
+            ],
+            "preferred": "grid.11696.39",
+            "type": "grid"
+          },
+          {
+            "all": [
+              "0000 0004 1937 0351"
+            ],
+            "preferred": null,
+            "type": "isni"
+          },
+          {
+            "all": [
+              "Q930528"
+            ],
+            "preferred": null,
+            "type": "wikidata"
+          }
+        ],
+        "id": "https://ror.org/05trd4x28",
+        "links": [
+          {
+            "type": "website",
+            "value": "http://www.unitn.it/en"
+          },
+          {
+            "type": "wikipedia",
+            "value": "http://en.wikipedia.org/wiki/University_of_Trento"
+          }
+        ],
+        "locations": [
+          {
+            "geonames_details": {
+              "country_code": "IT",
+              "country_name": "Italy",
+              "lat": 46.069426,
+              "lng": 11.121117,
+              "name": "Trento"
+            },
+            "geonames_id": 3165243
+          }
+        ],
+        "names": [
+          {
+            "lang": "en",
+            "types": [
+              "ror_display",
+              "label"
+            ],
+            "value": "University of Trento"
+          },
+          {
+            "lang": "it",
+            "types": [
+              "label"
+            ],
+            "value": "Università degli Studi di Trento"
+          },
+          {
+            "lang": "de",
+            "types": [
+              "label"
+            ],
+            "value": "Universität Trient"
+          },
+          {
+            "lang": "fr",
+            "types": [
+              "label"
+            ],
+            "value": "Université de Trente"
+          }
+        ],
+        "relationships": [
+          {
+            "label": "The Microsoft Research - University of Trento Centre for Computational and Systems Biology",
+            "type": "child",
+            "id": "https://ror.org/04kcgyj43"
+          },
+          {
+            "label": "Trento Institute for Fundamental Physics and Applications",
+            "type": "child",
+            "id": "https://ror.org/00nhs3j29"
+          }
+        ],
+        "status": "active",
+        "types": [
+          "education",
+          "funder"
+        ]
+      }
+    },
+    {
+      "substring": "university of",
+      "score": 0.76,
+      "matching_type": "FUZZY",
+      "chosen": false,
+      "organization": {
+        "admin": {
+          "created": {
+            "date": "2018-11-14",
+            "schema_version": "1.0"
+          },
+          "last_modified": {
+            "date": "2024-05-13",
+            "schema_version": "2.0"
+          }
+        },
+        "domains": [],
+        "established": 2000,
+        "external_ids": [
+          {
+            "all": [
+              "grid.449852.6"
+            ],
+            "preferred": "grid.449852.6",
+            "type": "grid"
+          },
+          {
+            "all": [
+              "0000 0001 1456 7938"
+            ],
+            "preferred": null,
+            "type": "isni"
+          },
+          {
+            "all": [
+              "Q673308"
+            ],
+            "preferred": null,
+            "type": "wikidata"
+          }
+        ],
+        "id": "https://ror.org/00kgrkn83",
+        "links": [
+          {
+            "type": "website",
+            "value": "http://www.unilu.ch/"
+          },
+          {
+            "type": "wikipedia",
+            "value": "https://en.wikipedia.org/wiki/University_of_Lucerne"
+          }
+        ],
+        "locations": [
+          {
+            "geonames_details": {
+              "country_code": "CH",
+              "country_name": "Switzerland",
+              "lat": 47.05048,
+              "lng": 8.30635,
+              "name": "Lucerne"
+            },
+            "geonames_id": 2659811
+          }
+        ],
+        "names": [
+          {
+            "lang": null,
+            "types": [
+              "acronym"
+            ],
+            "value": "UNILU"
+          },
+          {
+            "lang": "en",
+            "types": [
+              "ror_display",
+              "label"
+            ],
+            "value": "University of Lucerne"
+          },
+          {
+            "lang": "it",
+            "types": [
+              "label"
+            ],
+            "value": "Università di Lucerna"
+          },
+          {
+            "lang": "de",
+            "types": [
+              "label"
+            ],
+            "value": "Universität Luzern"
+          },
+          {
+            "lang": "fr",
+            "types": [
+              "label"
+            ],
+            "value": "Université de Lucerne"
+          }
+        ],
+        "relationships": [],
+        "status": "active",
+        "types": [
+          "education"
+        ]
+      }
+    },
+    {
+      "substring": "university of",
+      "score": 0.76,
+      "matching_type": "FUZZY",
+      "chosen": false,
+      "organization": {
+        "admin": {
+          "created": {
+            "date": "2018-11-14",
+            "schema_version": "1.0"
+          },
+          "last_modified": {
+            "date": "2024-05-13",
+            "schema_version": "2.0"
+          }
+        },
+        "domains": [],
+        "established": 1955,
+        "external_ids": [
+          {
+            "all": [
+              "501100005728",
+              "501100005729",
+              "501100006195"
+            ],
+            "preferred": "501100005728",
+            "type": "fundref"
+          },
+          {
+            "all": [
+              "grid.9906.6"
+            ],
+            "preferred": "grid.9906.6",
+            "type": "grid"
+          },
+          {
+            "all": [
+              "0000 0001 2289 7785"
+            ],
+            "preferred": null,
+            "type": "isni"
+          },
+          {
+            "all": [
+              "Q1230902"
+            ],
+            "preferred": null,
+            "type": "wikidata"
+          }
+        ],
+        "id": "https://ror.org/03fc1k060",
+        "links": [
+          {
+            "type": "website",
+            "value": "https://www.unisalento.it/web/guest/home_page"
+          },
+          {
+            "type": "wikipedia",
+            "value": "http://en.wikipedia.org/wiki/University_of_Salento"
+          }
+        ],
+        "locations": [
+          {
+            "geonames_details": {
+              "country_code": "IT",
+              "country_name": "Italy",
+              "lat": 40.349149,
+              "lng": 18.167084,
+              "name": "Lecce"
+            },
+            "geonames_id": 3174953
+          }
+        ],
+        "names": [
+          {
+            "lang": "en",
+            "types": [
+              "ror_display",
+              "label"
+            ],
+            "value": "University of Salento"
+          },
+          {
+            "lang": "it",
+            "types": [
+              "label"
+            ],
+            "value": "Università degli Studi di Lecce"
+          },
+          {
+            "lang": "it",
+            "types": [
+              "alias"
+            ],
+            "value": "Università del Salento"
+          },
+          {
+            "lang": "de",
+            "types": [
+              "label"
+            ],
+            "value": "Universität Salento"
+          },
+          {
+            "lang": "fr",
+            "types": [
+              "label"
+            ],
+            "value": "Université du salento"
+          }
+        ],
+        "relationships": [
+          {
+            "label": "INFN Sezione di Lecce",
+            "type": "child",
+            "id": "https://ror.org/00qrf6g60"
+          }
+        ],
+        "status": "active",
+        "types": [
+          "education",
+          "funder"
+        ]
+      }
+    },
+    {
+      "substring": "university of",
+      "score": 0.76,
+      "matching_type": "FUZZY",
+      "chosen": false,
+      "organization": {
+        "admin": {
+          "created": {
+            "date": "2018-11-14",
+            "schema_version": "1.0"
+          },
+          "last_modified": {
+            "date": "2024-05-13",
+            "schema_version": "2.0"
+          }
+        },
+        "domains": [],
+        "established": 1391,
+        "external_ids": [
+          {
+            "all": [
+              "501100007109"
+            ],
+            "preferred": null,
+            "type": "fundref"
+          },
+          {
+            "all": [
+              "grid.8484.0"
+            ],
+            "preferred": "grid.8484.0",
+            "type": "grid"
+          },
+          {
+            "all": [
+              "0000 0004 1757 2064"
+            ],
+            "preferred": null,
+            "type": "isni"
+          },
+          {
+            "all": [
+              "Q955609"
+            ],
+            "preferred": null,
+            "type": "wikidata"
+          }
+        ],
+        "id": "https://ror.org/041zkgm14",
+        "links": [
+          {
+            "type": "website",
+            "value": "http://www.unife.it/"
+          },
+          {
+            "type": "wikipedia",
+            "value": "http://en.wikipedia.org/wiki/University_of_Ferrara"
+          }
+        ],
+        "locations": [
+          {
+            "geonames_details": {
+              "country_code": "IT",
+              "country_name": "Italy",
+              "lat": 44.833659,
+              "lng": 11.626141,
+              "name": "Ferrara"
+            },
+            "geonames_id": 3177090
+          }
+        ],
+        "names": [
+          {
+            "lang": "en",
+            "types": [
+              "ror_display",
+              "label"
+            ],
+            "value": "University of Ferrara"
+          },
+          {
+            "lang": "it",
+            "types": [
+              "label"
+            ],
+            "value": "Università degli Studi di Ferrara"
+          },
+          {
+            "lang": "de",
+            "types": [
+              "label"
+            ],
+            "value": "Universität Ferrara"
+          },
+          {
+            "lang": "fr",
+            "types": [
+              "label"
+            ],
+            "value": "Université de ferrare"
+          }
+        ],
+        "relationships": [
+          {
+            "label": "INFN Sezione di Ferrara",
+            "type": "child",
+            "id": "https://ror.org/00zs3y046"
+          },
+          {
+            "label": "Laboratorio di Tecniche Nucleari per i Beni Culturali",
+            "type": "child",
+            "id": "https://ror.org/01jkemy20"
+          },
+          {
+            "label": "Arcispedale Sant'Anna",
+            "type": "related",
+            "id": "https://ror.org/026yzxh70"
+          }
+        ],
+        "status": "active",
+        "types": [
+          "education",
+          "funder"
+        ]
+      }
+    },
+    {
+      "substring": "university of",
+      "score": 0.76,
+      "matching_type": "COMMON TERMS",
+      "chosen": false,
+      "organization": {
+        "admin": {
+          "created": {
+            "date": "2018-11-14",
+            "schema_version": "1.0"
+          },
+          "last_modified": {
+            "date": "2024-05-13",
+            "schema_version": "2.0"
+          }
+        },
+        "domains": [],
+        "established": 1991,
+        "external_ids": [
+          {
+            "all": [
+              "grid.454596.f"
+            ],
+            "preferred": "grid.454596.f",
+            "type": "grid"
+          },
+          {
+            "all": [
+              "0000 0004 0558 9264"
+            ],
+            "preferred": null,
+            "type": "isni"
+          },
+          {
+            "all": [
+              "Q7895091"
+            ],
+            "preferred": null,
+            "type": "wikidata"
+          }
+        ],
+        "id": "https://ror.org/04e2ah412",
+        "links": [
+          {
+            "type": "website",
+            "value": "http://www.uofa.edu/"
+          },
+          {
+            "type": "wikipedia",
+            "value": "https://en.wikipedia.org/wiki/University_of_Atlanta"
+          }
+        ],
+        "locations": [
+          {
+            "geonames_details": {
+              "country_code": "US",
+              "country_name": "United States",
+              "lat": 33.89439,
+              "lng": -84.29556,
+              "name": "Johns Creek"
+            },
+            "geonames_id": 6331909
+          }
+        ],
+        "names": [
+          {
+            "lang": "en",
+            "types": [
+              "alias"
+            ],
+            "value": "Barrington University"
+          },
+          {
+            "lang": "en",
+            "types": [
+              "ror_display",
+              "label"
+            ],
+            "value": "University of Atlanta"
+          }
+        ],
+        "relationships": [],
+        "status": "active",
+        "types": [
+          "education"
+        ]
+      }
+    },
+    {
+      "substring": "university of",
+      "score": 0.76,
+      "matching_type": "PHRASE",
+      "chosen": false,
+      "organization": {
+        "admin": {
+          "created": {
+            "date": "2018-11-14",
+            "schema_version": "1.0"
+          },
+          "last_modified": {
+            "date": "2024-05-13",
+            "schema_version": "2.0"
+          }
+        },
+        "domains": [],
+        "established": 2007,
+        "external_ids": [
+          {
+            "all": [
+              "100007647"
+            ],
+            "preferred": null,
+            "type": "fundref"
+          },
+          {
+            "all": [
+              "grid.266218.9"
+            ],
+            "preferred": "grid.266218.9",
+            "type": "grid"
+          },
+          {
+            "all": [
+              "0000 0000 8761 3918"
+            ],
+            "preferred": null,
+            "type": "isni"
+          },
+          {
+            "all": [
+              "Q1861974"
+            ],
+            "preferred": null,
+            "type": "wikidata"
+          }
+        ],
+        "id": "https://ror.org/05gd22996",
+        "links": [
+          {
+            "type": "website",
+            "value": "http://www.cumbria.ac.uk/Home.aspx"
+          },
+          {
+            "type": "wikipedia",
+            "value": "http://en.wikipedia.org/wiki/University_of_Cumbria"
+          }
+        ],
+        "locations": [
+          {
+            "geonames_details": {
+              "country_code": "GB",
+              "country_name": "United Kingdom",
+              "lat": 54.890833,
+              "lng": -2.922222,
+              "name": "Carlisle"
+            },
+            "geonames_id": 2653775
+          }
+        ],
+        "names": [
+          {
+            "lang": "en",
+            "types": [
+              "ror_display",
+              "label"
+            ],
+            "value": "University of Cumbria"
+          }
+        ],
+        "relationships": [
+          {
+            "label": "Lancashire Teaching Hospitals NHS Foundation Trust",
+            "type": "related",
+            "id": "https://ror.org/02j7n9748"
+          }
+        ],
+        "status": "active",
+        "types": [
+          "education",
+          "funder"
+        ]
+      }
+    },
+    {
+      "substring": "university of",
+      "score": 0.74,
+      "matching_type": "FUZZY",
+      "chosen": false,
+      "organization": {
+        "admin": {
+          "created": {
+            "date": "2018-11-14",
+            "schema_version": "1.0"
+          },
+          "last_modified": {
+            "date": "2024-05-13",
+            "schema_version": "2.0"
+          }
+        },
+        "domains": [],
+        "established": 1889,
+        "external_ids": [
+          {
+            "all": [
+              "501100005869"
+            ],
+            "preferred": null,
+            "type": "fundref"
+          },
+          {
+            "all": [
+              "grid.8534.a"
+            ],
+            "preferred": "grid.8534.a",
+            "type": "grid"
+          },
+          {
+            "all": [
+              "0000 0004 0478 1713"
+            ],
+            "preferred": null,
+            "type": "isni"
+          },
+          {
+            "all": [
+              "Q36188"
+            ],
+            "preferred": null,
+            "type": "wikidata"
+          }
+        ],
+        "id": "https://ror.org/022fs9h90",
+        "links": [
+          {
+            "type": "website",
+            "value": "http://www.unifr.ch/home/welcomeE.php"
+          },
+          {
+            "type": "wikipedia",
+            "value": "http://en.wikipedia.org/wiki/University_of_Fribourg"
+          }
+        ],
+        "locations": [
+          {
+            "geonames_details": {
+              "country_code": "CH",
+              "country_name": "Switzerland",
+              "lat": 46.806488,
+              "lng": 7.151782,
+              "name": "Fribourg"
+            },
+            "geonames_id": 2660718
+          }
+        ],
+        "names": [
+          {
+            "lang": "en",
+            "types": [
+              "ror_display",
+              "label"
+            ],
+            "value": "University of Fribourg"
+          },
+          {
+            "lang": "it",
+            "types": [
+              "label"
+            ],
+            "value": "Università di Friburgo"
+          },
+          {
+            "lang": "de",
+            "types": [
+              "label"
+            ],
+            "value": "Universität Freiburg"
+          },
+          {
+            "lang": "fr",
+            "types": [
+              "label"
+            ],
+            "value": "Université de Fribourg"
+          }
+        ],
+        "relationships": [
+          {
+            "label": "Adolphe Merkle Institute",
+            "type": "child",
+            "id": "https://ror.org/01yx62742"
+          },
+          {
+            "label": "HFR Freiburg Kantonsspital",
+            "type": "related",
+            "id": "https://ror.org/00fz8k419"
+          }
+        ],
+        "status": "active",
+        "types": [
+          "education",
+          "funder"
+        ]
+      }
+    },
+    {
+      "substring": "university of",
+      "score": 0.74,
+      "matching_type": "PHRASE",
+      "chosen": false,
+      "organization": {
+        "admin": {
+          "created": {
+            "date": "2018-11-14",
+            "schema_version": "1.0"
+          },
+          "last_modified": {
+            "date": "2024-05-13",
+            "schema_version": "2.0"
+          }
+        },
+        "domains": [],
+        "established": 1910,
+        "external_ids": [
+          {
+            "all": [
+              "100008688",
+              "100008689"
+            ],
+            "preferred": "100008688",
+            "type": "fundref"
+          },
+          {
+            "all": [
+              "grid.431470.5"
+            ],
+            "preferred": "grid.431470.5",
+            "type": "grid"
+          },
+          {
+            "all": [
+              "Q1467920"
+            ],
+            "preferred": null,
+            "type": "wikidata"
+          }
+        ],
+        "id": "https://ror.org/02xn8bh65",
+        "links": [
+          {
+            "type": "website",
+            "value": "https://www.divinity.edu.au/"
+          },
+          {
+            "type": "wikipedia",
+            "value": "https://en.wikipedia.org/wiki/University_of_Divinity"
+          }
+        ],
+        "locations": [
+          {
+            "geonames_details": {
+              "country_code": "AU",
+              "country_name": "Australia",
+              "lat": -37.805637,
+              "lng": 145.036612,
+              "name": "Kew East"
+            },
+            "geonames_id": 7932628
+          }
+        ],
+        "names": [
+          {
+            "lang": "en",
+            "types": [
+              "ror_display",
+              "label"
+            ],
+            "value": "University of Divinity"
+          }
+        ],
+        "relationships": [
+          {
+            "label": "Morling College",
+            "type": "child",
+            "id": "https://ror.org/04gs7j941"
+          }
+        ],
+        "status": "active",
+        "types": [
+          "education",
+          "funder"
+        ]
+      }
+    },
+    {
+      "substring": "university of",
+      "score": 0.74,
+      "matching_type": "PHRASE",
+      "chosen": false,
+      "organization": {
+        "admin": {
+          "created": {
+            "date": "2018-11-14",
+            "schema_version": "1.0"
+          },
+          "last_modified": {
+            "date": "2024-05-13",
+            "schema_version": "2.0"
+          }
+        },
+        "domains": [],
+        "established": 1949,
+        "external_ids": [
+          {
+            "all": [
+              "grid.7336.1"
+            ],
+            "preferred": "grid.7336.1",
+            "type": "grid"
+          },
+          {
+            "all": [
+              "0000 0001 0203 5854"
+            ],
+            "preferred": null,
+            "type": "isni"
+          },
+          {
+            "all": [
+              "Q606815"
+            ],
+            "preferred": null,
+            "type": "wikidata"
+          }
+        ],
+        "id": "https://ror.org/03y5egs41",
+        "links": [
+          {
+            "type": "website",
+            "value": "http://englishweb.uni-pannon.hu/"
+          },
+          {
+            "type": "wikipedia",
+            "value": "http://en.wikipedia.org/wiki/University_of_Pannonia"
+          }
+        ],
+        "locations": [
+          {
+            "geonames_details": {
+              "country_code": "HU",
+              "country_name": "Hungary",
+              "lat": 47.087058,
+              "lng": 17.90853,
+              "name": "Veszprém"
+            },
+            "geonames_id": 3042929
+          }
+        ],
+        "names": [
+          {
+            "lang": "hu",
+            "types": [
+              "label"
+            ],
+            "value": "Pannon Egyetem"
+          },
+          {
+            "lang": "en",
+            "types": [
+              "ror_display",
+              "label"
+            ],
+            "value": "University of Pannonia"
+          },
+          {
+            "lang": "en",
+            "types": [
+              "alias"
+            ],
+            "value": "University of Veszprém"
+          }
+        ],
+        "relationships": [],
+        "status": "active",
+        "types": [
+          "education"
+        ]
+      }
+    },
+    {
+      "substring": "university of",
+      "score": 0.74,
+      "matching_type": "PHRASE",
+      "chosen": false,
+      "organization": {
+        "admin": {
+          "created": {
+            "date": "2018-11-14",
+            "schema_version": "1.0"
+          },
+          "last_modified": {
+            "date": "2024-05-13",
+            "schema_version": "2.0"
+          }
+        },
+        "domains": [],
+        "established": 1982,
+        "external_ids": [
+          {
+            "all": [
+              "grid.12104.36"
+            ],
+            "preferred": "grid.12104.36",
+            "type": "grid"
+          },
+          {
+            "all": [
+              "0000 0001 2289 8200"
+            ],
+            "preferred": null,
+            "type": "isni"
+          },
+          {
+            "all": [
+              "Q1570483"
+            ],
+            "preferred": null,
+            "type": "wikidata"
+          }
+        ],
+        "id": "https://ror.org/05nv2rz39",
+        "links": [
+          {
+            "type": "website",
+            "value": "http://www.uniswa.sz/"
+          },
+          {
+            "type": "wikipedia",
+            "value": "http://en.wikipedia.org/wiki/University_of_Swaziland"
+          }
+        ],
+        "locations": [
+          {
+            "geonames_details": {
+              "country_code": "SZ",
+              "country_name": "Eswatini",
+              "lat": -26.575917,
+              "lng": 31.177481,
+              "name": "Kwaluseni"
+            },
+            "geonames_id": 935054
+          }
+        ],
+        "names": [
+          {
+            "lang": null,
+            "types": [
+              "acronym"
+            ],
+            "value": "UNISWA"
+          },
+          {
+            "lang": "en",
+            "types": [
+              "ror_display",
+              "label"
+            ],
+            "value": "University of Eswatini"
+          },
+          {
+            "lang": "en",
+            "types": [
+              "alias"
+            ],
+            "value": "University of Swaziland"
+          }
+        ],
+        "relationships": [],
+        "status": "active",
+        "types": [
+          "education"
+        ]
+      }
+    },
+    {
+      "substring": "university of",
+      "score": 0.73,
+      "matching_type": "COMMON TERMS",
+      "chosen": false,
+      "organization": {
+        "admin": {
+          "created": {
+            "date": "2018-11-14",
+            "schema_version": "1.0"
+          },
+          "last_modified": {
+            "date": "2024-05-30",
+            "schema_version": "2.0"
+          }
+        },
+        "domains": [],
+        "established": 1853,
+        "external_ids": [
+          {
+            "all": [
+              "501100001782",
+              "501100007961",
+              "100008758",
+              "501100000986",
+              "501100000987",
+              "501100001052",
+              "501100014168"
+            ],
+            "preferred": "501100001782",
+            "type": "fundref"
+          },
+          {
+            "all": [
+              "grid.1008.9"
+            ],
+            "preferred": "grid.1008.9",
+            "type": "grid"
+          },
+          {
+            "all": [
+              "0000 0001 2179 088X"
+            ],
+            "preferred": null,
+            "type": "isni"
+          },
+          {
+            "all": [
+              "Q319078"
+            ],
+            "preferred": null,
+            "type": "wikidata"
+          }
+        ],
+        "id": "https://ror.org/01ej9dk98",
+        "links": [
+          {
+            "type": "website",
+            "value": "http://www.unimelb.edu.au/"
+          },
+          {
+            "type": "wikipedia",
+            "value": "http://en.wikipedia.org/wiki/University_of_Melbourne"
+          }
+        ],
+        "locations": [
+          {
+            "geonames_details": {
+              "country_code": "AU",
+              "country_name": "Australia",
+              "lat": -37.814,
+              "lng": 144.96332,
+              "name": "Melbourne"
+            },
+            "geonames_id": 2158177
+          }
+        ],
+        "names": [
+          {
+            "lang": "en",
+            "types": [
+              "alias"
+            ],
+            "value": "Melbourne University"
+          },
+          {
+            "lang": "en",
+            "types": [
+              "ror_display",
+              "label"
+            ],
+            "value": "University of Melbourne"
+          }
+        ],
+        "relationships": [
+          {
+            "label": "ARC Centre of Excellence for Coherent X-ray Science",
+            "type": "child",
+            "id": "https://ror.org/02gs3vg83"
+          },
+          {
+            "label": "ARC Centre of Excellence for Dark Matter Particle Physics",
+            "type": "child",
+            "id": "https://ror.org/00cybsr61"
+          },
+          {
+            "label": "ARC Centre of Excellence for Mathematical and Statistical Frontiers",
+            "type": "child",
+            "id": "https://ror.org/02vcqg248"
+          },
+          {
+            "label": "ARC Centre of Excellence for Particle Physics at the Terascale",
+            "type": "child",
+            "id": "https://ror.org/01h06nz15"
+          },
+          {
+            "label": "Florey Institute of Neuroscience and Mental Health",
+            "type": "child",
+            "id": "https://ror.org/03a2tac74"
+          },
+          {
+            "label": "Peter Doherty Institute",
+            "type": "child",
+            "id": "https://ror.org/016899r71"
+          },
+          {
+            "label": "Botany Foundation",
+            "type": "child",
+            "id": "https://ror.org/04fxxe129"
+          },
+          {
+            "label": "AuScope",
+            "type": "related",
+            "id": "https://ror.org/04s1m4564"
+          },
+          {
+            "label": "Austin Health",
+            "type": "related",
+            "id": "https://ror.org/05dbj6g52"
+          },
+          {
+            "label": "Austin Hospital",
+            "type": "related",
+            "id": "https://ror.org/010mv7n52"
+          },
+          {
+            "label": "Australian Urban Research Infrastructure Network",
+            "type": "related",
+            "id": "https://ror.org/02c3nzd41"
+          },
+          {
+            "label": "Bionics Institute",
+            "type": "related",
+            "id": "https://ror.org/05e4f1b55"
+          },
+          {
+            "label": "Burnet Institute",
+            "type": "related",
+            "id": "https://ror.org/05ktbsm52"
+          },
+          {
+            "label": "Centre for Eye Research Australia",
+            "type": "related",
+            "id": "https://ror.org/01sqdef20"
+          },
+          {
+            "label": "Epworth Hospital",
+            "type": "related",
+            "id": "https://ror.org/02ett6548"
+          },
+          {
+            "label": "Geelong Hospital",
+            "type": "related",
+            "id": "https://ror.org/00jrpxe15"
+          },
+          {
+            "label": "Melbourne Health",
+            "type": "related",
+            "id": "https://ror.org/04z4kmw33"
+          },
+          {
+            "label": "Murdoch Children's Research Institute",
+            "type": "related",
+            "id": "https://ror.org/048fyec77"
+          },
+          {
+            "label": "Northern Hospital",
+            "type": "related",
+            "id": "https://ror.org/05mjmsc11"
+          },
+          {
+            "label": "Royal Children's Hospital",
+            "type": "related",
+            "id": "https://ror.org/02rktxt32"
+          },
+          {
+            "label": "Royal Women's Hospital",
+            "type": "related",
+            "id": "https://ror.org/03grnna41"
+          },
+          {
+            "label": "St Vincent's Hospital",
+            "type": "related",
+            "id": "https://ror.org/001kjn539"
+          },
+          {
+            "label": "St Vincents Institute of Medical Research",
+            "type": "related",
+            "id": "https://ror.org/02k3cxs74"
+          },
+          {
+            "label": "The Royal Victorian Eye & Ear Hospital",
+            "type": "related",
+            "id": "https://ror.org/008q4kt04"
+          },
+          {
+            "label": "Victorian Comprehensive Cancer Centre",
+            "type": "related",
+            "id": "https://ror.org/00st91468"
+          },
+          {
+            "label": "Australian Centre for Excellence in Antarctic Science",
+            "type": "related",
+            "id": "https://ror.org/024jkkf40"
+          },
+          {
+            "label": "Stawell Underground Physics Laboratory",
+            "type": "related",
+            "id": "https://ror.org/01az7g189"
+          }
+        ],
+        "status": "active",
+        "types": [
+          "education",
+          "funder"
+        ]
+      }
+    },
+    {
+      "substring": "university of",
+      "score": 0.72,
+      "matching_type": "PHRASE",
+      "chosen": false,
+      "organization": {
+        "admin": {
+          "created": {
+            "date": "2018-11-14",
+            "schema_version": "1.0"
+          },
+          "last_modified": {
+            "date": "2024-05-13",
+            "schema_version": "2.0"
+          }
+        },
+        "domains": [],
+        "established": 1851,
+        "external_ids": [
+          {
+            "all": [
+              "100007913",
+              "100005901",
+              "100007328",
+              "100007708",
+              "100008163",
+              "100008293",
+              "100010634",
+              "100010253",
+              "100011123",
+              "100011142",
+              "100009258",
+              "100007866",
+              "100005461",
+              "100009233",
+              "100008961",
+              "100013051"
+            ],
+            "preferred": null,
+            "type": "fundref"
+          },
+          {
+            "all": [
+              "grid.17635.36"
+            ],
+            "preferred": "grid.17635.36",
+            "type": "grid"
+          },
+          {
+            "all": [
+              "0000 0004 1936 8657"
+            ],
+            "preferred": null,
+            "type": "isni"
+          },
+          {
+            "all": [
+              "Q238101"
+            ],
+            "preferred": null,
+            "type": "wikidata"
+          }
+        ],
+        "id": "https://ror.org/017zqws13",
+        "links": [
+          {
+            "type": "website",
+            "value": "http://twin-cities.umn.edu/"
+          },
+          {
+            "type": "wikipedia",
+            "value": "http://en.wikipedia.org/wiki/University_of_Minnesota"
+          }
+        ],
+        "locations": [
+          {
+            "geonames_details": {
+              "country_code": "US",
+              "country_name": "United States",
+              "lat": 44.97997,
+              "lng": -93.26384,
+              "name": "Minneapolis"
+            },
+            "geonames_id": 5037649
+          }
+        ],
+        "names": [
+          {
+            "lang": "en",
+            "types": [
+              "ror_display",
+              "label"
+            ],
+            "value": "University of Minnesota"
+          },
+          {
+            "lang": "en",
+            "types": [
+              "alias"
+            ],
+            "value": "University of Minnesota, Twin Cities"
+          }
+        ],
+        "relationships": [
+          {
+            "label": "Minnesota Geological Survey",
+            "type": "child",
+            "id": "https://ror.org/034ebnm46"
+          },
+          {
+            "label": "Continental Scientific Drilling Facility",
+            "type": "child",
+            "id": "https://ror.org/02amckb22"
+          },
+          {
+            "label": "Cedar Creek Long Term Ecological Research",
+            "type": "child",
+            "id": "https://ror.org/03a976s92"
+          },
+          {
+            "label": "Minneapolis-St. Paul Long Term Ecological Research",
+            "type": "child",
+            "id": "https://ror.org/04sqxdt31"
+          },
+          {
+            "label": "Bell Museum of Natural History",
+            "type": "child",
+            "id": "https://ror.org/01zn7ya31"
+          },
+          {
+            "label": "Minnesota Agricultural Experiment Station",
+            "type": "child",
+            "id": "https://ror.org/0516b6a83"
+          },
+          {
+            "label": "Masonic Cancer Center",
+            "type": "child",
+            "id": "https://ror.org/05x083d20"
+          },
+          {
+            "label": "University of Minnesota System",
+            "type": "parent",
+            "id": "https://ror.org/03grvy078"
+          },
+          {
+            "label": "Children's Minnesota",
+            "type": "related",
+            "id": "https://ror.org/03d543283"
+          },
+          {
+            "label": "Hennepin County Medical Center",
+            "type": "related",
+            "id": "https://ror.org/01k7a6660"
+          },
+          {
+            "label": "Minneapolis VA Health Care System",
+            "type": "related",
+            "id": "https://ror.org/02ry60714"
+          },
+          {
+            "label": "Minnesota Lions Eye Bank",
+            "type": "related",
+            "id": "https://ror.org/05je2ma32"
+          },
+          {
+            "label": "Minnesota Veterans Medical Research and Education Foundation",
+            "type": "related",
+            "id": "https://ror.org/04cm1q459"
+          },
+          {
+            "label": "St. Joseph's Hospital",
+            "type": "related",
+            "id": "https://ror.org/00r520291"
+          },
+          {
+            "label": "University of Minnesota Children's Hospital",
+            "type": "related",
+            "id": "https://ror.org/05jc5ee02"
+          },
+          {
+            "label": "University of Minnesota Medical Center",
+            "type": "related",
+            "id": "https://ror.org/03e1ayz78"
+          }
+        ],
+        "status": "active",
+        "types": [
+          "education",
+          "funder"
+        ]
+      }
+    },
+    {
+      "substring": "university of",
+      "score": 0.72,
+      "matching_type": "PHRASE",
+      "chosen": false,
+      "organization": {
+        "admin": {
+          "created": {
+            "date": "2018-11-14",
+            "schema_version": "1.0"
+          },
+          "last_modified": {
+            "date": "2024-05-13",
+            "schema_version": "2.0"
+          }
+        },
+        "domains": [],
+        "established": 1883,
+        "external_ids": [
+          {
+            "all": [
+              "grid.420519.b"
+            ],
+            "preferred": "grid.420519.b",
+            "type": "grid"
+          },
+          {
+            "all": [
+              "0000 0000 9952 4517"
+            ],
+            "preferred": null,
+            "type": "isni"
+          },
+          {
+            "all": [
+              "Q6146207"
+            ],
+            "preferred": null,
+            "type": "wikidata"
+          }
+        ],
+        "id": "https://ror.org/01xqc9g05",
+        "links": [
+          {
+            "type": "website",
+            "value": "http://www.uj.edu/"
+          },
+          {
+            "type": "wikipedia",
+            "value": "http://en.wikipedia.org/wiki/University_of_Jamestown"
+          }
+        ],
+        "locations": [
+          {
+            "geonames_details": {
+              "country_code": "US",
+              "country_name": "United States",
+              "lat": 46.914,
+              "lng": -98.698,
+              "name": "Jamestown"
+            },
+            "geonames_id": 5059836
+          }
+        ],
+        "names": [
+          {
+            "lang": "en",
+            "types": [
+              "ror_display",
+              "label"
+            ],
+            "value": "University of Jamestown"
+          }
+        ],
+        "relationships": [],
+        "status": "active",
+        "types": [
+          "education"
+        ]
+      }
+    },
+    {
+      "substring": "university of",
+      "score": 0.7,
+      "matching_type": "COMMON TERMS",
+      "chosen": false,
+      "organization": {
+        "admin": {
+          "created": {
+            "date": "2018-11-14",
+            "schema_version": "1.0"
+          },
+          "last_modified": {
+            "date": "2024-05-13",
+            "schema_version": "2.0"
+          }
+        },
+        "domains": [],
+        "established": 1824,
+        "external_ids": [
+          {
+            "all": [
+              "501100000770",
+              "100007545",
+              "100007546",
+              "501100000584",
+              "501100006628",
+              "100012371"
+            ],
+            "preferred": "501100000770",
+            "type": "fundref"
+          },
+          {
+            "all": [
+              "grid.5379.8"
+            ],
+            "preferred": "grid.5379.8",
+            "type": "grid"
+          },
+          {
+            "all": [
+              "0000 0001 2166 2407"
+            ],
+            "preferred": null,
+            "type": "isni"
+          },
+          {
+            "all": [
+              "Q230899"
+            ],
+            "preferred": null,
+            "type": "wikidata"
+          }
+        ],
+        "id": "https://ror.org/027m9bs27",
+        "links": [
+          {
+            "type": "website",
+            "value": "http://www.manchester.ac.uk/"
+          },
+          {
+            "type": "wikipedia",
+            "value": "http://en.wikipedia.org/wiki/University_of_Manchester"
+          }
+        ],
+        "locations": [
+          {
+            "geonames_details": {
+              "country_code": "GB",
+              "country_name": "United Kingdom",
+              "lat": 53.48095,
+              "lng": -2.23743,
+              "name": "Manchester"
+            },
+            "geonames_id": 2643123
+          }
+        ],
+        "names": [
+          {
+            "lang": "en",
+            "types": [
+              "alias"
+            ],
+            "value": "Manchester University"
+          },
+          {
+            "lang": "cy",
+            "types": [
+              "label"
+            ],
+            "value": "Prifysgol Manceinion"
+          },
+          {
+            "lang": "en",
+            "types": [
+              "ror_display",
+              "label"
+            ],
+            "value": "University of Manchester"
+          },
+          {
+            "lang": "en",
+            "types": [
+              "alias"
+            ],
+            "value": "University of Manchester Institute of Science and Technology"
+          },
+          {
+            "lang": "en",
+            "types": [
+              "alias"
+            ],
+            "value": "Victoria University of Manchester"
+          }
+        ],
+        "relationships": [
+          {
+            "label": "Manchester School of Architecture",
+            "type": "child",
+            "id": "https://ror.org/03xxxrq06"
+          },
+          {
+            "label": "Wellcome Centre for Cell-Matrix Research",
+            "type": "child",
+            "id": "https://ror.org/0094tm228"
+          },
+          {
+            "label": "Centre for Epidemiology Versus Arthritis",
+            "type": "child",
+            "id": "https://ror.org/05eev2q71"
+          },
+          {
+            "label": "Cancer Research UK Manchester Centre",
+            "type": "child",
+            "id": "https://ror.org/033svsm10"
+          },
+          {
+            "label": "Cancer Imaging Centre",
+            "type": "child",
+            "id": "https://ror.org/023a2er20"
+          },
+          {
+            "label": "Lancashire Teaching Hospitals NHS Foundation Trust",
+            "type": "related",
+            "id": "https://ror.org/02j7n9748"
+          },
+          {
+            "label": "Manchester Royal Eye Hospital",
+            "type": "related",
+            "id": "https://ror.org/04xtpk854"
+          },
+          {
+            "label": "Manchester Royal Infirmary",
+            "type": "related",
+            "id": "https://ror.org/03kr30n36"
+          },
+          {
+            "label": "Manchester University NHS Foundation Trust",
+            "type": "related",
+            "id": "https://ror.org/00he80998"
+          },
+          {
+            "label": "North Manchester General Hospital",
+            "type": "related",
+            "id": "https://ror.org/02xesw687"
+          },
+          {
+            "label": "Royal Manchester Children's Hospital",
+            "type": "related",
+            "id": "https://ror.org/052vjje65"
+          },
+          {
+            "label": "Salford Royal Hospital",
+            "type": "related",
+            "id": "https://ror.org/027rkpb34"
+          },
+          {
+            "label": "Trafford General Hospital",
+            "type": "related",
+            "id": "https://ror.org/02snwfx66"
+          },
+          {
+            "label": "University Dental Hospital of Manchester",
+            "type": "related",
+            "id": "https://ror.org/019bxes45"
+          }
+        ],
+        "status": "active",
+        "types": [
+          "education",
+          "funder"
+        ]
+      }
+    },
+    {
+      "substring": "university of",
+      "score": 0.7,
+      "matching_type": "PHRASE",
+      "chosen": false,
+      "organization": {
+        "admin": {
+          "created": {
+            "date": "2018-11-14",
+            "schema_version": "1.0"
+          },
+          "last_modified": {
+            "date": "2024-05-13",
+            "schema_version": "2.0"
+          }
+        },
+        "domains": [],
+        "established": 2005,
+        "external_ids": [
+          {
+            "all": [
+              "100010008"
+            ],
+            "preferred": null,
+            "type": "fundref"
+          },
+          {
+            "all": [
+              "grid.266161.4"
+            ],
+            "preferred": "grid.266161.4",
+            "type": "grid"
+          },
+          {
+            "all": [
+              "0000 0001 0739 2308"
+            ],
+            "preferred": null,
+            "type": "isni"
+          },
+          {
+            "all": [
+              "Q3551577"
+            ],
+            "preferred": null,
+            "type": "wikidata"
+          }
+        ],
+        "id": "https://ror.org/029tw2407",
+        "links": [
+          {
+            "type": "website",
+            "value": "http://www.chi.ac.uk/"
+          },
+          {
+            "type": "wikipedia",
+            "value": "http://en.wikipedia.org/wiki/University_of_Chichester"
+          }
+        ],
+        "locations": [
+          {
+            "geonames_details": {
+              "country_code": "GB",
+              "country_name": "United Kingdom",
+              "lat": 50.844862,
+              "lng": -0.775873,
+              "name": "Chichester"
+            },
+            "geonames_id": 2653192
+          }
+        ],
+        "names": [
+          {
+            "lang": "en",
+            "types": [
+              "ror_display",
+              "label"
+            ],
+            "value": "University of Chichester"
+          }
+        ],
+        "relationships": [],
+        "status": "active",
+        "types": [
+          "education",
+          "funder"
+        ]
+      }
+    },
+    {
+      "substring": "university of",
+      "score": 0.7,
+      "matching_type": "PHRASE",
+      "chosen": false,
+      "organization": {
+        "admin": {
+          "created": {
+            "date": "2018-11-14",
+            "schema_version": "1.0"
+          },
+          "last_modified": {
+            "date": "2024-05-13",
+            "schema_version": "2.0"
+          }
+        },
+        "domains": [],
+        "established": 1869,
+        "external_ids": [
+          {
+            "all": [
+              "100009153"
+            ],
+            "preferred": null,
+            "type": "fundref"
+          },
+          {
+            "all": [
+              "grid.4701.2"
+            ],
+            "preferred": "grid.4701.2",
+            "type": "grid"
+          },
+          {
+            "all": [
+              "0000 0001 0728 6636"
+            ],
+            "preferred": null,
+            "type": "isni"
+          },
+          {
+            "all": [
+              "Q2744209"
+            ],
+            "preferred": null,
+            "type": "wikidata"
+          }
+        ],
+        "id": "https://ror.org/03ykbk197",
+        "links": [
+          {
+            "type": "website",
+            "value": "http://www.port.ac.uk/"
+          },
+          {
+            "type": "wikipedia",
+            "value": "http://en.wikipedia.org/wiki/University_of_Portsmouth"
+          }
+        ],
+        "locations": [
+          {
+            "geonames_details": {
+              "country_code": "GB",
+              "country_name": "United Kingdom",
+              "lat": 50.794808,
+              "lng": -1.091279,
+              "name": "Portsmouth"
+            },
+            "geonames_id": 2639996
+          }
+        ],
+        "names": [
+          {
+            "lang": "en",
+            "types": [
+              "ror_display",
+              "label"
+            ],
+            "value": "University of Portsmouth"
+          }
+        ],
+        "relationships": [],
+        "status": "active",
+        "types": [
+          "education",
+          "funder"
+        ]
+      }
+    },
+    {
+      "substring": "university of",
+      "score": 0.67,
+      "matching_type": "COMMON TERMS",
+      "chosen": false,
+      "organization": {
+        "admin": {
+          "created": {
+            "date": "2018-11-14",
+            "schema_version": "1.0"
+          },
+          "last_modified": {
+            "date": "2024-05-13",
+            "schema_version": "2.0"
+          }
+        },
+        "domains": [],
+        "established": 1825,
+        "external_ids": [
+          {
+            "all": [
+              "100010028"
+            ],
+            "preferred": null,
+            "type": "fundref"
+          },
+          {
+            "all": [
+              "grid.15751.37"
+            ],
+            "preferred": "grid.15751.37",
+            "type": "grid"
+          },
+          {
+            "all": [
+              "0000 0001 0719 6059"
+            ],
+            "preferred": null,
+            "type": "isni"
+          },
+          {
+            "all": [
+              "Q3056815"
+            ],
+            "preferred": null,
+            "type": "wikidata"
+          }
+        ],
+        "id": "https://ror.org/05t1h8f27",
+        "links": [
+          {
+            "type": "website",
+            "value": "http://www.hud.ac.uk/"
+          },
+          {
+            "type": "wikipedia",
+            "value": "http://en.wikipedia.org/wiki/University_of_Huddersfield"
+          }
+        ],
+        "locations": [
+          {
+            "geonames_details": {
+              "country_code": "GB",
+              "country_name": "United Kingdom",
+              "lat": 53.64324,
+              "lng": -1.77837,
+              "name": "Huddersfield"
+            },
+            "geonames_id": 2646458
+          }
+        ],
+        "names": [
+          {
+            "lang": "en",
+            "types": [
+              "alias"
+            ],
+            "value": "Huddersfield University"
+          },
+          {
+            "lang": "en",
+            "types": [
+              "ror_display",
+              "label"
+            ],
+            "value": "University of Huddersfield"
+          }
+        ],
+        "relationships": [],
+        "status": "active",
+        "types": [
+          "education",
+          "funder"
+        ]
+      }
+    }
+  ]
+}
