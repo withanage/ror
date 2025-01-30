@@ -1,0 +1,9 @@
+msgid "plugins.generic.ror.description"
+msgstr "Consente di gestire le affiliazioni di autori/autrici e reviewer con gli identificativi <a href=\"https://ror.org\">ROR</a>."
+
+msgid "plugins.generic.ror.displayName"
+msgstr "Research Organization Registry (ROR)"
+
+msgid "plugins.generic.ror.rorPlaceHolder"
+msgstr "Search ror.org"
+
