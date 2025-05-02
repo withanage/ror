@@ -40,8 +40,7 @@ class RORPlugin extends GenericPlugin {
 			});
 			# Submission
 			HookRegistry::register('ArticleHandler::view', array(&$this, 'submissionView'));
-			HookRegistry::register('PreprintHandler::view', array(&$this, 'submissionView'));
-
+			HookRegistry::register('TemplateManager::display', array(&$this, 'handleSubmissionDisplay'));
 		}
 		return $success;
 	}
@@ -51,7 +50,6 @@ class RORPlugin extends GenericPlugin {
 		$output =& $params[2];
 
 		$submission = $templateMgr->get_template_vars('monograph') ? $templateMgr->get_template_vars('monograph') : $templateMgr->get_template_vars('article');
-
 	}
 
 	function handleAuthorFormExecute($hookname, $args) {
@@ -101,7 +99,7 @@ class RORPlugin extends GenericPlugin {
 						array(
 							'rorId' => $author->getData('rorId'),
 							'rorPlaceHolder' => __('plugins.generic.ror.rorPlaceHolder'),
-							'supportedLocales' => $request->getJournal()->getSupportedFormLocales()
+							'supportedLocales' => $request->getContext()->getSupportedFormLocales()
 
 						)
 					);
@@ -146,6 +144,49 @@ class RORPlugin extends GenericPlugin {
 		return false;
 	}
 
+	function handleSubmissionDisplay($hookName, $args) {
+		$templateMgr = &$args[0];
+		$template = $args[1];
+		$output =& $args[2];
+
+		$applicationName = Application::get()->getName();
+
+		if ($applicationName === 'ojs2') {
+			return false;
+		}
+
+		if (!in_array($template, ['frontend/pages/preprint.tpl', 'frontend/pages/book.tpl'])) {
+			return false;
+		}
+
+		$templateMgr->assign(array(
+			"rorIdIcon" => $this->getIcon()
+		));
+
+		$activeTheme = $templateMgr->get_template_vars('activeTheme');
+		if ($activeTheme->getDirName() === 'default') {
+			$templateMgr->registerFilter("output", array($this, 'submissionDisplayFilter'));
+		}
+
+		return false;
+	}
+
+	function submissionDisplayFilter($output, $templateMgr) {
+		$applicationName = Application::get()->getName();
+		$authorsPattern = $applicationName === 'ops'
+			? '/<section class="item authors">([\s\S]*?)<\/section>/'
+			: '/<div class="item authors">([\s\S]*?)<\/div>\s*(?=\s*<div class="item)/';
+		if (preg_match($authorsPattern, $output, $matches, PREG_OFFSET_CAPTURE)) {
+			$match = $matches[1][0];
+			$offset = $matches[1][1];
+			$newOutput = substr($output, 0, $offset);
+			$newOutput .= $templateMgr->fetch($this->getTemplateResource($applicationName . '_submission_authors.tpl'));
+			$newOutput .= substr($output, $offset + strlen($match));
+			$output = $newOutput;
+			$templateMgr->unregisterFilter('output', array($this, 'submissionDisplayFilter'));
+		}
+		return $output;
+	}
 
 	/**
 	 * @copydoc Plugin::getDisplayName()
