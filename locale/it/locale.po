@@ -1,0 +1,30 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-03-01T23:59:59+00:00\n"
+"PO-Revision-Date: 2024-06-05T12:00:00+00:00\n"
+"Language: it\n"
+
+msgid "plugins.generic.ror.displayName"
+msgstr "Registro delle Organizzazioni di Ricerca (ROR)"
+
+msgid "plugins.generic.ror.description"
+msgstr "Permette di gestire le affiliazioni di autori/revisori utilizzando gli identificatori <a href=\"https://ror.org\">ROR</a>."
+
+msgid "plugins.generic.ror.input.label"
+msgstr "ROR iD"
+
+msgid "plugins.generic.ror.input.tooltip"
+msgstr "ROR è un registro globale, guidato dalla comunità, di identificatori persistenti aperti per le organizzazioni di ricerca. Maggiori informazioni su <a href=\"https://ror.org\">ror.org</a>."
+
+msgid "plugins.generic.ror.input.lookup.label"
+msgstr "Cerca Affiliazione e ROR iD su ror.org"
+
+msgid "plugins.generic.ror.input.lookup.tooltip"
+msgstr "Si prega di inserire il nome dell'organizzazione. Cliccando sull'organizzazione si sovrascriveranno i campi \"Affiliazione\" e \"ROR iD\"."

@@ -1,0 +1,30 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-03-01T23:59:59+00:00\n"
+"PO-Revision-Date: 2024-06-05T12:00:00+00:00\n"
+"Language: ru\n"
+
+msgid "plugins.generic.ror.displayName"
+msgstr "Реестр научных организаций (ROR)"
+
+msgid "plugins.generic.ror.description"
+msgstr "Позволяет управлять принадлежностью авторов/рецензентов к организациям с использованием идентификаторов <a href=\"https://ror.org\">ROR</a>."
+
+msgid "plugins.generic.ror.input.label"
+msgstr "ROR ID"
+
+msgid "plugins.generic.ror.input.tooltip"
+msgstr "ROR - это глобальный, управляемый сообществом реестр открытых постоянных идентификаторов для научных организаций. Узнайте больше на <a href=\"https://ror.org\">ror.org</a>."
+
+msgid "plugins.generic.ror.input.lookup.label"
+msgstr "Поиск принадлежности к организации и ROR ID на ror.org"
+
+msgid "plugins.generic.ror.input.lookup.tooltip"
+msgstr "Пожалуйста, введите название организации. Нажатие на организацию перезапишет поля \"Принадлежность\" и \"ROR ID\"."
