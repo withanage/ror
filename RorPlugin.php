@@ -16,6 +16,7 @@ namespace APP\plugins\generic\ror;
 use APP\plugins\generic\ror\classes\ArticleView;
 use APP\plugins\generic\ror\classes\Form;
 use APP\plugins\generic\ror\classes\Schema;
+use APP\plugins\generic\ror\classes\SubmissionDisplay;
 use APP\plugins\generic\ror\classes\Workflow;
 use PKP\plugins\GenericPlugin;
 use PKP\plugins\Hook;
@@ -35,11 +36,13 @@ class RorPlugin extends GenericPlugin
                 $form = new Form();
                 $workflow = new Workflow($this);
                 $articleView = new ArticleView($this);
+                $submissionDisplay = new SubmissionDisplay($this);
                 Hook::add('Schema::get::author', [$schema, 'addToAuthor']);
                 Hook::add('Form::config::before', [$form, 'addFields']);
                 Hook::add('Template::Workflow::Publication', [$workflow, 'execute']);
                 Hook::add('Template::SubmissionWizard::Section', [$workflow, 'execute']);
                 Hook::add('ArticleHandler::view', [$articleView, 'execute']);
+                Hook::add('TemplateManager::display', [$submissionDisplay, 'execute']);
             }
 
             return true;
