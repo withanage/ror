@@ -86,7 +86,7 @@
                 }
             },
             apiLookup() {
-                fetch('https://api.ror.org/organizations?affiliation=' + this.searchPhrase + '*')
+                fetch('https://api.ror.org/v1/organizations?affiliation=' + this.searchPhrase + '*')
                     .then(response => response.json())
                     .then(data => {
                         this.organizations = [];
