@@ -17,7 +17,7 @@
 			tagLimit: 1,
 			tagSource: function (search, r) {ldelim}
 				$.ajax({ldelim}
-					url: 'https://api.ror.org/organizations',
+					url: 'https://api.ror.org/v1/organizations',
 					dataType: 'json',
 					cache: true,
 					data: {ldelim}
