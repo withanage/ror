@@ -68,12 +68,10 @@ class RORPlugin extends GenericPlugin {
 				$author->setData('rorId', str_replace(['[', ']'], '', $matches[0]));
 				$affiliation = preg_replace($rorIDPattern, '', $value);
 				$author->setData('affiliation', $affiliation, $locale);
-			} else {
-				if ($locale == $publicationLocale) {
-					$currentAffiliation = $this->getCurrentAuthorAffiliation($author->getId(), $locale);
-					if ($currentAffiliation !== $value) {
-						$author->setData('rorId', null);
-					}
+			} elseif (!is_null($author->getId()) && $locale == $publicationLocale) {
+				$currentAffiliation = $this->getCurrentAuthorAffiliation($author->getId(), $locale);
+				if ($currentAffiliation !== $value) {
+					$author->setData('rorId', null);
 				}
 			}
 		}
