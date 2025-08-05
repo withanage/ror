@@ -15,28 +15,41 @@
 			fieldName: 'affiliation-ROR[]',
 			allowSpaces: true,
 			tagLimit: 1,
-			tagSource: function (search, r) {ldelim}
-				$.ajax({ldelim}
-					url: 'https://api.ror.org/v1/organizations',
-					dataType: 'json',
-					cache: true,
-					data: {ldelim}
-						affiliation: search.term + '*'
-						{rdelim},
-					success:
-							function (data) {ldelim}
-								results = data.items;
+            tagSource: function (search, r) {ldelim}
+                $.ajax({ldelim}
+                    url: 'https://api.ror.org/v2/organizations',
+                    dataType: 'json',
+                    cache: true,
+                    data: {ldelim}
+                        query: search.term
+                        {rdelim},
+                    success:
+                        function (data) {ldelim}
+                            results = data.items;
 
-								r($.map(data.items, function (item) {ldelim}
-									return {ldelim}
-										label: item.organization.name,
-										value: item.organization.name + ' [' + item.organization.id + ']'
-										{rdelim}
-									{rdelim}));
+                            r($.map(data.items, function (item) {ldelim}
+                                let names = {ldelim}{rdelim};
+                                const noLangCode = 'no_lang_code';
+                                const displayLocale =
+                                    item.names?.find((i) => i.types.includes('ror_display'))?.lang !== null
+                                        ? item.names?.find((i) => i.types.includes('ror_display'))?.lang
+                                        : noLangCode;
 
-								{rdelim}
-					{rdelim});
-				{rdelim},
+                                item.names?.forEach((name) => {ldelim}
+                                    if (name.types.includes('label') || name.types.includes('ror_display')) {ldelim}
+                                        const locale = name.lang !== null ? name.lang : noLangCode;
+                                        names[locale] = name.value;
+                                        {rdelim}
+                                    {rdelim});
+
+                                return {ldelim}
+                                    label: names[displayLocale],
+                                    value: names[displayLocale]
+                                    {rdelim};
+                                {rdelim}));
+                            {rdelim}
+                    {rdelim});
+                {rdelim},
 			beforeTagAdded: function (event,ui) {ldelim}
 				{rdelim},
 			afterTagAdded: function (event, ui) {ldelim}
