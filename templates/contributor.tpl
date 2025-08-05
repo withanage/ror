@@ -86,21 +86,30 @@
                 }
             },
             apiLookup() {
-                fetch('https://api.ror.org/v1/organizations?affiliation=' + this.searchPhrase + '*')
+                fetch('https://api.ror.org/v2/organizations?query=' + this.searchPhrase)
                     .then(response => response.json())
                     .then(data => {
                         this.organizations = [];
                         let items = data.items;
                         items.forEach((item) => {
-                            let labels = { /* */};
-                            for (let i = 0; i < item.organization.labels.length; i++) {
-                                labels[item.organization.labels[i].iso639]
-                                    = item.organization.labels[i].label
-                            }
+                            let names = { /* */};
+                            const noLangCode = 'no_lang_code';
+                            const displayLocale =
+                                item.names?.find((i) => i.types.includes('ror_display'))?.lang !== null
+                                    ? item.names?.find((i) => i.types.includes('ror_display'))?.lang
+                                    : noLangCode;
+
+                            item.names?.forEach((name) => {
+                                if (name.types.includes('label') || name.types.includes('ror_display')) {
+                                    const locale = name.lang !== null ? name.lang : noLangCode;
+                                    names[locale] = name.value;
+                                }
+                            });
+
                             let row = {
-                                id: item.organization.id,
-                                name: item.organization.name,
-                                labels: labels
+                                id: item.id,
+                                name: names[displayLocale],
+                                labels: names
                             };
 
                             this.organizations.push(row);
