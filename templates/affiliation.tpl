@@ -43,8 +43,8 @@
                                     {rdelim});
 
                                 return {ldelim}
-                                    label: names[displayLocale],
-                                    value: names[displayLocale]
+                                    label: names[displayLocale] + ' [' + item.id + ']',
+                                    value: names[displayLocale] + ' [' + item.id + ']'
                                     {rdelim};
                                 {rdelim}));
                             {rdelim}
@@ -62,7 +62,7 @@
 					if (found !== null) {
 						const rorId = found[0];
 						$.each(results, function (key,value){
-							if (value.organization.id == rorId){
+							if (value.id == rorId) {
 								var supportedLocales = {$supportedLocales|json_encode};
 								console.log(supportedLocales);
 
@@ -70,13 +70,11 @@
 									console.log(k,val);
 									var locale = val.slice(0,2);
 									if (locale.length == 2) {
-										value.organization.labels.forEach(function (v) {
-											if (locale == v["iso639"]) {
-												if (locale !== primaryLocale.slice(0,2)) {
-													$('input[id^="affiliation-' + locale + '"]').val(v.label);
-													$('input[id^="affiliation-' + locale + '"]').parent().css("display", "block");
-													$('input[id^="affiliation-' + locale + '"]').parent().css("width", "576px");
-												}
+										value.names.forEach(function (v) {
+											if (locale !== primaryLocale.slice(0,2)) {
+												$('input[id^="affiliation-' + locale + '"]').val(v.label);
+												$('input[id^="affiliation-' + locale + '"]').parent().css("display", "block");
+												$('input[id^="affiliation-' + locale + '"]').parent().css("width", "576px");
 											}
 										});
 
