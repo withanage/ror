@@ -8,8 +8,6 @@
  * Ror lookup for contributor
  *}
 
-<link rel="stylesheet" href="{$stylePath}" type="text/css"/>
-
 {assign var="templateOpen" value='<script>let rorPluginTemplate = `'}
 {assign var="templateClose" value='`;</script>'}
 

@@ -12,6 +12,8 @@
 
 namespace APP\plugins\generic\ror\classes;
 
+use PKP\plugins\Hook;
+
 class Schema
 {
     /**
@@ -32,6 +34,6 @@ class Schema
             'validation' => ['nullable']
         ];
 
-        return false;
+        return Hook::CONTINUE;
     }
 }
