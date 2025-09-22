@@ -72,7 +72,7 @@
 									if (locale.length == 2) {
 										value.names.forEach(function (v) {
 											if (locale !== primaryLocale.slice(0,2)) {
-												$('input[id^="affiliation-' + locale + '"]').val(v.label);
+												$('input[id^="affiliation-' + locale + '"]').val(v.value);
 												$('input[id^="affiliation-' + locale + '"]').parent().css("display", "block");
 												$('input[id^="affiliation-' + locale + '"]').parent().css("width", "576px");
 											}
