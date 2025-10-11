@@ -16,6 +16,7 @@ use APP\plugins\generic\ror\RorPlugin;
 use APP\template\TemplateManager;
 use Exception;
 use PKP\core\Core;
+use PKP\plugins\Hook;
 
 class ArticleView
 {
@@ -23,9 +24,9 @@ class ArticleView
     private RorPlugin $plugin;
 
     /** @param RorPlugin $plugin */
-    public function __construct(RorPlugin &$plugin)
+    public function __construct(RorPlugin $plugin)
     {
-        $this->plugin = &$plugin;
+        $this->plugin = $plugin;
     }
 
     /**
@@ -48,6 +49,6 @@ class ArticleView
 
         $templateMgr->assign([Constants::iconNameInTemplate => $icon]);
 
-        return false;
+        return Hook::CONTINUE;
     }
 }

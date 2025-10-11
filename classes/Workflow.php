@@ -15,6 +15,7 @@ namespace APP\plugins\generic\ror\classes;
 use APP\core\Application;
 use APP\plugins\generic\ror\RorPlugin;
 use APP\template\TemplateManager;
+use PKP\plugins\Hook;
 
 class Workflow
 {
@@ -22,9 +23,9 @@ class Workflow
     public RorPlugin $plugin;
 
     /** @param RorPlugin $plugin */
-    public function __construct(RorPlugin &$plugin)
+    public function __construct(RorPlugin $plugin)
     {
-        $this->plugin = &$plugin;
+        $this->plugin = $plugin;
     }
 
     /**
@@ -32,18 +33,14 @@ class Workflow
      *
      * @param string $hookName
      * @param array $args [string, TemplateManager]
-     * @return void
      */
-    public function execute(string $hookName, array &$args): void
+    function execute(string $hookName, array &$args): bool
     {
         /* @var TemplateManager $templateMgr */
         $templateMgr = &$args[1];
-        $request = Application::get()->getRequest();
+        $output =& $args[2];
+        $output .= $templateMgr->fetch($this->plugin->getTemplateResource(Constants::templateContributor));
 
-        $templateMgr->assign([
-            'stylePath' => $request->getBaseUrl() . '/' . $this->plugin->getPluginPath() . '/' . Constants::stylePath
-        ]);
-
-        $templateMgr->display($this->plugin->getTemplateResource(Constants::templateContributor));
+        return Hook::CONTINUE;
     }
 }

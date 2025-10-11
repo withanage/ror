@@ -20,6 +20,8 @@ use APP\plugins\generic\ror\classes\SubmissionDisplay;
 use APP\plugins\generic\ror\classes\Workflow;
 use PKP\plugins\GenericPlugin;
 use PKP\plugins\Hook;
+use APP\core\Application;
+use APP\template\TemplateManager;
 
 define('ROR_PLUGIN_NAME', basename(__FILE__, '.php'));
 
@@ -43,6 +45,20 @@ class RorPlugin extends GenericPlugin
                 Hook::add('Template::SubmissionWizard::Section', [$workflow, 'execute']);
                 Hook::add('ArticleHandler::view', [$articleView, 'execute']);
                 Hook::add('TemplateManager::display', [$submissionDisplay, 'execute']);
+                Hook::add('TemplateManager::display', function($hookName, $args) {
+                    $templateMgr =& $args[0];
+                    $request = Application::get()->getRequest();
+                    $templateMgr->addStyleSheet(
+                        'rorPluginStyles',
+                        $request->getBaseUrl() . '/' . $this->getPluginPath() . '/' . classes\Constants::stylePath,
+                        [
+                            'priority' => TemplateManager::STYLE_SEQUENCE_LAST,
+                            'contexts' => ['backend'],
+                            'inline' => false,
+                        ]
+                    );
+                    return Hook::CONTINUE;
+                });
             }
 
             return true;

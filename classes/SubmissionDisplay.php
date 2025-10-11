@@ -19,6 +19,7 @@ use APP\plugins\generic\ror\RorPlugin;
 use APP\template\TemplateManager;
 use Exception;
 use PKP\core\Core;
+use PKP\plugins\Hook;
 
 class SubmissionDisplay
 {
@@ -26,9 +27,9 @@ class SubmissionDisplay
     private RorPlugin $plugin;
 
     /** @param RorPlugin $plugin */
-    public function __construct(RorPlugin &$plugin)
+    public function __construct(RorPlugin $plugin)
     {
-        $this->plugin = &$plugin;
+        $this->plugin = $plugin;
     }
 
     /**
@@ -65,7 +66,7 @@ class SubmissionDisplay
             $templateMgr->registerFilter("output", array($this, 'submissionDisplayFilter'));
         }
 
-        return false;
+        return Hook::CONTINUE;
     }
 
     /**
