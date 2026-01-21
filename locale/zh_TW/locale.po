@@ -1,0 +1,30 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-03-01T23:59:59+00:00\n"
+"PO-Revision-Date: 2024-06-05T12:00:00+00:00\n"
+"Language: zh_TW\n"
+
+msgid "plugins.generic.ror.displayName"
+msgstr "研究組織註冊表（ROR）"
+
+msgid "plugins.generic.ror.description"
+msgstr "使用 <a href=\"https://ror.org\">ROR</a> 識別碼管理作者/審稿人所屬機構。"
+
+msgid "plugins.generic.ror.input.label"
+msgstr "ROR 識別碼"
+
+msgid "plugins.generic.ror.input.tooltip"
+msgstr "ROR 是一個全球性的、由社區主導的研究組織開放持久識別碼註冊表。了解更多信息，請訪問 <a href=\"https://ror.org\">ror.org</a>。"
+
+msgid "plugins.generic.ror.input.lookup.label"
+msgstr "在 ror.org 上搜索機構和 ROR 識別碼"
+
+msgid "plugins.generic.ror.input.lookup.tooltip"
+msgstr "請填寫組織名稱。點擊組織將覆蓋"所屬機構"和"ROR 識別碼"欄位。"

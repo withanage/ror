@@ -1,0 +1,30 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-03-01T23:59:59+00:00\n"
+"PO-Revision-Date: 2024-06-05T12:00:00+00:00\n"
+"Language: ko\n"
+
+msgid "plugins.generic.ror.displayName"
+msgstr "연구 기관 레지스트리 (ROR)"
+
+msgid "plugins.generic.ror.description"
+msgstr "<a href=\"https://ror.org\">ROR</a> 식별자를 사용하여 저자/심사자 소속 기관을 관리할 수 있습니다."
+
+msgid "plugins.generic.ror.input.label"
+msgstr "ROR ID"
+
+msgid "plugins.generic.ror.input.tooltip"
+msgstr "ROR은 연구 기관을 위한 오픈 지속 식별자의 글로벌 커뮤니티 주도 레지스트리입니다. <a href=\"https://ror.org\">ror.org</a>에서 자세히 알아보세요."
+
+msgid "plugins.generic.ror.input.lookup.label"
+msgstr "ror.org에서 소속 기관 및 ROR ID 검색"
+
+msgid "plugins.generic.ror.input.lookup.tooltip"
+msgstr "기관 이름을 입력해 주세요. 기관을 클릭하면 \"소속 기관\"과 \"ROR ID\" 필드가 덮어쓰기됩니다."

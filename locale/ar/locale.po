@@ -1,0 +1,30 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-03-01T23:59:59+00:00\n"
+"PO-Revision-Date: 2024-06-05T12:00:00+00:00\n"
+"Language: ar\n"
+
+msgid "plugins.generic.ror.displayName"
+msgstr "سجل منظمات البحث (ROR)"
+
+msgid "plugins.generic.ror.description"
+msgstr "يسمح بإدارة انتماءات المؤلفين/المراجعين باستخدام معرفات <a href=\"https://ror.org\">ROR</a>."
+
+msgid "plugins.generic.ror.input.label"
+msgstr "معرف ROR"
+
+msgid "plugins.generic.ror.input.tooltip"
+msgstr "ROR هو سجل عالمي يقوده المجتمع للمعرفات المستمرة المفتوحة لمنظمات البحث. تعرف على المزيد في <a href=\"https://ror.org\">ror.org</a>."
+
+msgid "plugins.generic.ror.input.lookup.label"
+msgstr "البحث عن الانتماء ومعرف ROR على ror.org"
+
+msgid "plugins.generic.ror.input.lookup.tooltip"
+msgstr "يرجى إدخال اسم المنظمة. سيؤدي النقر على المنظمة إلى استبدال حقول \"الانتماء\" و \"معرف ROR\"."

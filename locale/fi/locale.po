@@ -1,0 +1,30 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-03-01T23:59:59+00:00\n"
+"PO-Revision-Date: 2024-06-05T12:00:00+00:00\n"
+"Language: fi\n"
+
+msgid "plugins.generic.ror.displayName"
+msgstr "Tutkimusorganisaatiorekisteri (ROR)"
+
+msgid "plugins.generic.ror.description"
+msgstr "Mahdollistaa kirjoittajien/arvioijien affiliaatioiden hallinnoimisen <a href=\"https://ror.org\">ROR</a>-tunnisteiden avulla."
+
+msgid "plugins.generic.ror.input.label"
+msgstr "ROR-tunnus"
+
+msgid "plugins.generic.ror.input.tooltip"
+msgstr "ROR on maailmanlaajuinen, yhteisöjohtoinen avoimien pysyvien tunnisteiden rekisteri tutkimusorganisaatioille. Lue lisää osoitteessa <a href=\"https://ror.org\">ror.org</a>."
+
+msgid "plugins.generic.ror.input.lookup.label"
+msgstr "Etsi affiliaatiota ja ROR-tunnusta ror.org-sivustolta"
+
+msgid "plugins.generic.ror.input.lookup.tooltip"
+msgstr "Täytä organisaation nimi. Organisaation klikkaaminen korvaa kentät \"Affiliaatio\" ja \"ROR-tunnus\"."

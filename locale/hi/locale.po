@@ -1,0 +1,30 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-03-01T23:59:59+00:00\n"
+"PO-Revision-Date: 2024-06-05T12:00:00+00:00\n"
+"Language: hi\n"
+
+msgid "plugins.generic.ror.displayName"
+msgstr "अनुसंधान संगठन रजिस्ट्री (ROR)"
+
+msgid "plugins.generic.ror.description"
+msgstr "<a href=\"https://ror.org\">ROR</a> पहचानकर्ताओं का उपयोग करके लेखक/समीक्षक संबद्धताओं को प्रबंधित करने की अनुमति देता है।"
+
+msgid "plugins.generic.ror.input.label"
+msgstr "ROR आईडी"
+
+msgid "plugins.generic.ror.input.tooltip"
+msgstr "ROR अनुसंधान संगठनों के लिए एक वैश्विक, समुदाय-नेतृत्व वाला खुला स्थायी पहचानकर्ताओं का रजिस्ट्री है। <a href=\"https://ror.org\">ror.org</a> पर अधिक जानें।"
+
+msgid "plugins.generic.ror.input.lookup.label"
+msgstr "ror.org पर संबद्धता और ROR आईडी खोजें"
+
+msgid "plugins.generic.ror.input.lookup.tooltip"
+msgstr "कृपया संगठन का नाम भरें। संगठन पर क्लिक करने से \"संबद्धता\" और \"ROR आईडी\" फ़ील्ड ओवरराइट हो जाएंगे।"
