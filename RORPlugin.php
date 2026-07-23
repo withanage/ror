@@ -70,7 +70,7 @@ class RORPlugin extends GenericPlugin {
 				$author->setData('affiliation', $affiliation, $locale);
 			} elseif (!is_null($author->getId()) && $locale == $publicationLocale) {
 				$currentAffiliation = $this->getCurrentAuthorAffiliation($author->getId(), $locale);
-				if ($currentAffiliation !== $value) {
+				if (trim($currentAffiliation) !== trim($value)) {
 					$author->setData('rorId', null);
 				}
 			}
